@@ -1,28 +1,29 @@
 import Link from 'next/link'
+import { Anchor, Nav, List } from './styles'
 
 const Navigation = () => {
   return (
-    <div>
-      <ul>
+    <Nav>
+      <List>
         <li>
           <Link href='/'>
-            <a>Home</a>
+            <Anchor>Home</Anchor>
           </Link>
         </li>
 
         <li>
           <Link href='/'>
-            <a>Stores</a>
+            <Anchor>Stores</Anchor>
           </Link>
         </li>
 
         <li>
           <Link href='/about'>
-            <a>About</a>
+            <Anchor>About</Anchor>
           </Link>
         </li>
-      </ul>
-    </div>
+      </List>
+    </Nav>
   )
 }
 
