@@ -15,8 +15,8 @@ export const Card = styled.div`
 `
 
 export const Image = styled.img`
+  height: 80px;
   width: auto;
-  height: 60px;
 `
 export const Separator = styled.div`
   width: 2px;

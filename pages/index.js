@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import Search from '../components/Search'
 import CardStore from '../components/CardStore'
 import CardCategory from '../components/CardCategory'
+import CardSimpleStore from '../components/CardSimpleStore'
 
 const Index = () => {
   return (
@@ -10,6 +11,8 @@ const Index = () => {
       <CardStore></CardStore>
       <br></br>
       <CardCategory></CardCategory>
+      <br></br>
+      <CardSimpleStore></CardSimpleStore>
     </Layout>
   )
 }
