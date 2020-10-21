@@ -1,9 +1,10 @@
 import Layout from '../components/Layout'
+import Search from '../components/Search'
 
 const Index = () => {
   return (
     <Layout>
-      <h1>Landing Page</h1>
+      <Search></Search>
     </Layout>
   )
 }
