@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Card = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 600px;
   height: 120px;
@@ -13,16 +14,16 @@ export const Card = styled.div`
     background-color: #fac5c5;
   }
 `
+export const Category = styled.div`
+  font-size: 38px;
+`
+export const Line = styled.div`
+  width: 160px;
+  height: 2px;
+  margin-top: 8px;
+  background-color: #b86161;
+  &:hover {
+    background-color: black;
+  }
+`
 
-export const Image = styled.img`
-  width: 120px;
-  height: 90px;
-`
-export const Separator = styled.div`
-  width: 2px;
-  height: 80px;
-  background-color: black;
-`
-export const PriceTag = styled.div`
-  font-size: 24px;
-`
