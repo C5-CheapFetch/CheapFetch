@@ -1,9 +1,9 @@
-import Layout from '../src/components/Layout'
-import Search from '../src/components/Search'
-import CardStore from '../src/components/CardStore'
-import CardCategory from '../src/components/CardCategory'
-import CardSimpleStore from '../src/components/CardSimpleStore'
-import CardSquare from '../src/components/CardSquare'
+import Layout from '../components/Layout'
+import Search from '../components/Search'
+import CardStore from '../components/CardStore'
+import CardCategory from '../components/CardCategory'
+import CardSimpleStore from '../components/CardSimpleStore'
+import CardSquare from '../components/CardSquare'
 
 const Index = () => {
   return (
