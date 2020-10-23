@@ -8,7 +8,6 @@ export const Card = styled.div`
   grid-template-columns: 50% 50%;
   /* overflow: hidden; */
   border: 3px solid #1c1c1c;
-  margin: 100px;
 
   /* hacer el border-radius angular */
   clip-path: polygon(
@@ -27,6 +26,10 @@ export const Card = styled.div`
     transform: scale(1.01);
     background-color: #fac5c5;
   }
+  &:hover #cardinfo__name {
+    border-bottom: 3px solid #1c1c1c;
+    white-space: normal; /*para que se vea el nombre entero al hacer hover */
+  }
 `
 
 export const Image = styled.img`
@@ -40,10 +43,29 @@ export const Info = styled.div `
   width: 100%;
   height: inherit;
   grid-column: 2 / 3;
-  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const Name = styled.p `
   font-size: 24px;
   color: #1c1c1c;
+  width: 80%;
+  margin-top: 15%;
+  padding-bottom: 5%;
+  border-bottom: 3px solid #fac5c5;
+  white-space: nowrap; /*propiedad para '...'*/
+  overflow: hidden; /*propiedad para '...'*/
+  text-overflow: ellipsis; /*propiedad para '...'*/
+`
+
+export const Price = styled.p`
+  margin-top: 5%;
+  font-size: 24px;
+`
+
+export const Store = styled.p`
+  margin-top: 20%;
+
 `

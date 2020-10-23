@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Card, Image, Info, Name } from './styles'
+import { Card, Image, Info, Name, Price, Store } from './styles'
 
 const CardInfo = ({picture_url, name, price, stores}) => {
   picture_url = '/images/camera.jpg'
-  name = 'Product Name 24px'
+  name = 'Product Name 24px lorem ipsum'
   price = 999.99
   stores = 'Amazon'
 
@@ -12,9 +12,9 @@ const CardInfo = ({picture_url, name, price, stores}) => {
     <Card>
       <Image src={picture_url} />
       <Info>
-        <Name>{name}</Name>
-        <p>${price}</p>
-        <p>{stores}</p>
+        <Name id='cardinfo__name'>{name}</Name>
+        <Price>${price}</Price>
+        <Store>{stores}</Store>
       </Info>
     </Card>
   )
