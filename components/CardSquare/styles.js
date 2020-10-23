@@ -6,7 +6,6 @@ export const Card = styled.div`
   background-color: #FAC5C5;
   overflow:hidden;
   border: 3px solid #1C1C1C;
-  margin: 30px;
   box-shadow: 5px 5px 5px 5px black;
 
   /* hacer el border-radius angular */
