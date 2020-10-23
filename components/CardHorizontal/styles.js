@@ -1,23 +1,21 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-  width: 194px;
+  width: 408px;
   height: 194px;
   background-color: #FAC5C5;
   overflow:hidden;
   border: 3px solid #1C1C1C;
-  margin: 30px;
-  box-shadow: 5px 5px 5px 5px black;
 
   /* hacer el border-radius angular */
   clip-path: polygon(
     0 2%,
-    2% 0,
-    98% 0,
+    1% 0,
+    99% 0,
     100% 2%,
     100% 98%,
-    98% 100%,
-    2% 100%,
+    99% 100%,
+    1% 100%,
     0% 98%,
     0% 10%
   );
