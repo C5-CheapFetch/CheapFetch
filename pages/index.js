@@ -6,6 +6,7 @@ import CardSimpleStore from '../components/CardSimpleStore'
 import CardSquare from '../components/CardSquare'
 import CardVertical from '../components/CardVertical'
 import CardHorizontal from '../components/CardHorizontal'
+import CardInfo from '../components/CardInfo'
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <CardSquare />
       <CardVertical />
       <CardHorizontal />
+      <CardInfo />
     </Layout>
   )
 }
