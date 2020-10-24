@@ -9,13 +9,13 @@ import CardVertical from '../CardVertical'
 const GridCards = () => {
 
   // se obtienen los productos del local storage y se almacenan en una variable
-  const itemsLocalStorage = JSON.parse( localStorage.getItem("items"))
+  // const itemsLocalStorage = JSON.parse( localStorage.getItem("items"))
 
   return(
     <Grid>
-      <CardSquare {...itemsLocalStorage[50]} />
-      <CardVertical {...itemsLocalStorage[100]} />
-      <CardHorizontal {...itemsLocalStorage[120]} />
+      <CardSquare />
+      <CardVertical />
+      <CardHorizontal />
     </Grid>
   )
 }

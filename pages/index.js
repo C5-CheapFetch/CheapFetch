@@ -20,12 +20,18 @@ const Index = () => {
   
   //___local storage___
   // se guarda la llamada de la api en el local storage para usarse en toda la app
-  localStorage.setItem( "items", JSON.stringify( itemList ))
+  // localStorage.setItem( "items", JSON.stringify( itemList ))
   
   // se obtienen los productos del local storage y se almacenan en una variable
-  const itemsLocalStorage = JSON.parse( localStorage.getItem("items"))
+  // const itemsLocalStorage = JSON.parse( localStorage.getItem("items"))
   
-  console.log(itemsLocalStorage)
+  // console.log(itemsLocalStorage)
+
+  if (typeof window !== 'undefined') {
+    console.log('we are running on the client')
+  } else {
+    console.log('we are running on the server');
+  }
 
 
   return (
@@ -37,10 +43,10 @@ const Index = () => {
       <hr />
       <ListStores></ListStores>
       <hr />
-      <CardSquare {...itemsLocalStorage[240]} />
-      <CardVertical {...itemsLocalStorage[250]} />
-      <CardHorizontal {...itemsLocalStorage[270]} />
-      <CardInfo {...itemsLocalStorage[48]} />
+      <CardSquare />
+      <CardVertical />
+      <CardHorizontal />
+      <CardInfo />
       <GridCards />
     </Layout>
   )

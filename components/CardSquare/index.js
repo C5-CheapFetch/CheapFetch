@@ -4,7 +4,7 @@ import {Card, Image} from './styles'
 
 const CardSquare = ({picture_url}) => {
   
-  // img = 'images/keyboard.jpg'
+  picture_url = 'images/keyboard.jpg'
 
   return(
     <Card>
