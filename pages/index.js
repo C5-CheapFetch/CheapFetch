@@ -1,3 +1,6 @@
+import React from 'react'
+import { useFetchApi } from '../hooks/useFetchApi'
+
 import Layout from '../components/Layout'
 import Search from '../components/Search'
 import CardStore from '../components/CardStore'
@@ -9,6 +12,11 @@ import CardHorizontal from '../components/CardHorizontal'
 import CardInfo from '../components/CardInfo'
 
 const Index = () => {
+
+  const [itemList] = useFetchApi('https://apidjangoprueba.azurewebsites.net/api/items-list/')
+
+  console.log(itemList)
+
   return (
     <Layout>
       <Search></Search>
