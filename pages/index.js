@@ -1,22 +1,20 @@
 import Layout from '../components/Layout'
 import Search from '../components/Search'
-import CardStore from '../components/CardStore'
-import CardCategory from '../components/CardCategory'
-import CardSimpleStore from '../components/CardSimpleStore'
 import CardSquare from '../components/CardSquare'
 import CardVertical from '../components/CardVertical'
 import CardHorizontal from '../components/CardHorizontal'
 import CardInfo from '../components/CardInfo'
+import ListSimpleStore from '../components/ListSimpleStore'
+import ListCategories from '../components/ListCategories'
+import ListStores from '../components/ListStores'
 
 const Index = () => {
   return (
     <Layout>
       <Search></Search>
-      <CardStore></CardStore>
-      <br></br>
-      <CardCategory></CardCategory>
-      <br></br>
-      <CardSimpleStore></CardSimpleStore>
+      <ListCategories></ListCategories>
+      <ListSimpleStore></ListSimpleStore>
+      <ListStores></ListStores>
       <CardSquare />
       <CardVertical />
       <CardHorizontal />
