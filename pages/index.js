@@ -25,13 +25,7 @@ const Index = () => {
   // se obtienen los productos del local storage y se almacenan en una variable
   // const itemsLocalStorage = JSON.parse( localStorage.getItem("items"))
   
-  // console.log(itemsLocalStorage)
-
-  if (typeof window !== 'undefined') {
-    console.log('we are running on the client')
-  } else {
-    console.log('we are running on the server');
-  }
+  console.log(itemList)
 
 
   return (
