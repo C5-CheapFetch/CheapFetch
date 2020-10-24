@@ -23,7 +23,7 @@ const Search = () => {
       <Background>
         <Area>
           <SearchBar
-            placeholder='Buscar'
+            placeholder='Search products'
             value={text}
             onChange={handleChange}
             onKeyDown={keyPress}

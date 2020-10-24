@@ -1,19 +1,13 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+display:flex;
+flex-direction:column;
   width: 600px;
-  height: 120px;
-  background-color: whitesmoke;
   border: 3px solid #1c1c1c;
-  cursor: pointer;
   margin: 16px;
   &:hover {
     background-color: #fac5c5;
-    transform: scale(1.1);
   }
   /* hacer el border-radius angular */
   clip-path: polygon(
@@ -27,15 +21,14 @@ export const Card = styled.div`
     0% calc(100% - 5px)
   );
 `
-export const Category = styled.div`
-  font-size: 38px;
+
+export const Image = styled.img`
+  width: 100%;
 `
-export const Line = styled.div`
-  width: 160px;
-  height: 2px;
-  margin-top: 8px;
-  background-color: #b86161;
-  &:hover {
-    background-color: black;
-  }
+export const ProductLabel = styled.div`
+  font-size: 26px;
+  line-height: 80px;
+  height: 80px;
+  padding:0 16px 0 16px;
+  background-color: #fac5c5;
 `

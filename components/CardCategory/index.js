@@ -2,8 +2,6 @@ import Link from 'next/link'
 import { Card, Category, Line } from './styles'
 
 const CardStore = ({ category, id }) => {
-  category = 'Category 36'
-  id = '31'
 
   const redirect = () => {
     alert(`Ir a la categoria: ${category}`)
