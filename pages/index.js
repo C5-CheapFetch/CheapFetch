@@ -3,6 +3,10 @@ import Search from '../components/Search'
 import CardStore from '../components/CardStore'
 import CardCategory from '../components/CardCategory'
 import CardSimpleStore from '../components/CardSimpleStore'
+import CardSquare from '../components/CardSquare'
+import CardVertical from '../components/CardVertical'
+import CardHorizontal from '../components/CardHorizontal'
+import CardInfo from '../components/CardInfo'
 
 const Index = () => {
   return (
@@ -13,6 +17,10 @@ const Index = () => {
       <CardCategory></CardCategory>
       <br></br>
       <CardSimpleStore></CardSimpleStore>
+      <CardSquare />
+      <CardVertical />
+      <CardHorizontal />
+      <CardInfo />
     </Layout>
   )
 }
