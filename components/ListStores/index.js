@@ -1,3 +1,4 @@
+import CardComparison from '../CardComparison'
 import CardStore from '../CardStore'
 import { List, Title } from './styles'
 
@@ -26,6 +27,7 @@ const ListSimpleStore = () => {
   ]
   return (
     <List>
+      <CardComparison img={'/images/camera.jpg'} product={'LUMIX CAMERA'}></CardComparison>
       <Title>Available in the following stores</Title>
       {stores.map((s) => (
         <CardStore img={s.img} price={s.price} url={s.url}></CardStore>

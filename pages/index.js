@@ -13,8 +13,11 @@ const Index = () => {
     <Layout>
       <Search></Search>
       <ListCategories></ListCategories>
+      <hr />
       <ListSimpleStore></ListSimpleStore>
+      <hr />
       <ListStores></ListStores>
+      <hr />
       <CardSquare />
       <CardVertical />
       <CardHorizontal />
