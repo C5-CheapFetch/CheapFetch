@@ -3,10 +3,10 @@ import React from 'react'
 import { Card, Image, Info, Name, Price, Store } from './styles'
 
 const CardInfo = ({picture_url, name, price, stores}) => {
-  picture_url = '/images/camera.jpg'
-  name = 'Product Name 24px lorem ipsum'
-  price = 999.99
-  stores = 'Amazon'
+  // picture_url = '/images/camera.jpg'
+  // name = 'Product Name 24px lorem ipsum'
+  // price = 999.99
+  // stores = 'Amazon'
 
   return (
     <Card>

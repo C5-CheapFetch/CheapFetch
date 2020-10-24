@@ -9,15 +9,14 @@ export const Card = styled.div`
 
   /* hacer el border-radius angular */
   clip-path: polygon(
-    0 1%,
-    2% 0,
-    98% 0,
-    100% 1%,
-    100% 99%,
-    98% 100%,
-    2% 100%,
-    0% 99%,
-    0% 10%
+    0 5px,
+    5px 0,
+    calc(100% - 5px) 0px,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0% calc(100% - 5px)
   );
 
   &:hover{

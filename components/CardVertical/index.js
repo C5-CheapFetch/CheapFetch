@@ -2,13 +2,13 @@ import React from 'react'
 
 import {Card, Image} from './styles'
 
-const CardVertical = ({img}) => {
+const CardVertical = ({picture_url}) => {
   
-  img = 'images/camera.jpg'
+  // img = 'images/camera.jpg'
 
   return(
     <Card>
-      <Image src={img} />
+      <Image src={picture_url} />
     </Card>
   )
 }
