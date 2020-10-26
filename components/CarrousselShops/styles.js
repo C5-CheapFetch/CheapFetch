@@ -1,21 +1,19 @@
 import styled from "styled-components";
-import { keyframes, css } from "styled-components";
+import { keyframes } from "styled-components";
 
-export const Scroll = keyframes`
-from {
-  0% {
-transform: translateX(0);
-}
-}
+// export const Carroussel = styled.{keyframes scroll}
 
-to{
+export const scroll = keyframes`
+0% {
+    transform: translateX(0);
+  }
   100% {
-transform: translateX(calc(-250px * 7));
-      }
-}`;
+    transform: translateX(calc(-250px * 7));
+  }
+}
+`;
 
 export const Slider = styled.div`
-  ${Scroll}
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
@@ -51,7 +49,7 @@ export const Slider = styled.div`
 `;
 
 export const SlideTrack = styled.div`
-  animation: scroll 40s linear infinite;
+  animation: ${scroll} 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
 `;
