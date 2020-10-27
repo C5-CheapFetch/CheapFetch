@@ -24,7 +24,23 @@ export const CarrousselShops = () => {
         </Slide>
         <Slide>
           <img
+            src="/images/BestBuyCarroussel.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </Slide>
+        <Slide>
+          <img
             src="/images/EbayCarroussel.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </Slide>
+        <Slide>
+          <img
+            src="/images/GearBestCarroussel.png"
             height="100"
             width="250"
             alt=""
@@ -49,6 +65,14 @@ export const CarrousselShops = () => {
         <Slide>
           <img
             src="/images/WalmartCarroussel.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </Slide>
+        <Slide>
+          <img
+            src="/images/WishCarroussel.png"
             height="100"
             width="250"
             alt=""
