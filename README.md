@@ -1,6 +1,6 @@
 <center>
 
-![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo")
+<!-- ![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo") -->
 
 ![](https://img.shields.io/github/stars/Food-Market/letscook) ![](https://img.shields.io/github/forks/Food-Market/letscook)
 ![GitHub](https://img.shields.io/github/license/Food-Market/LetsCook?color=%232a9d8f)
@@ -65,7 +65,7 @@ npm run start
 
 ---
 
-## Api - Descripcion
+## Api - Description
 
 - Endpont Recipes: "http://161.35.124.63:3000/api/maestro"
 - Endpont BreakFast: "http://161.35.124.63:3000/api/maestro/type/breakfast"
