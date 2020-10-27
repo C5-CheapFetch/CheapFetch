@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/Food-Market/LetsCook?color=%232a9d8f)
 ![](https://img.shields.io/github/release/Food-Market/letscook) ![](https://img.shields.io/github/issues/Food-Market/letscook)
 
-# 🍛🥗 Lets Cook - Food Market 👩‍🍳👨‍🍳
+# 🧐💹 CheapFetch 😍〽
 
   </center>
 
