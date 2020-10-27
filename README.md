@@ -65,7 +65,7 @@ npm run start
 
 ---
 
-## Api - Descripcion
+## Api - Description
 
 - Endpont Recipes: "http://161.35.124.63:3000/api/maestro"
 - Endpont BreakFast: "http://161.35.124.63:3000/api/maestro/type/breakfast"
