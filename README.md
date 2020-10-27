@@ -1,6 +1,6 @@
 <center>
 
-![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo")
+<!-- ![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo") -->
 
 ![](https://img.shields.io/github/stars/Food-Market/letscook) ![](https://img.shields.io/github/forks/Food-Market/letscook)
 ![GitHub](https://img.shields.io/github/license/Food-Market/LetsCook?color=%232a9d8f)
