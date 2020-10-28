@@ -1,5 +1,6 @@
 import React from "react";
 import { useFetchApi } from "../hooks/useFetchApi";
+import Head from "next/head";
 
 import Layout from "../components/Layout";
 import { CarrousselShops } from "../components/CarrousselShops";
@@ -30,6 +31,9 @@ const Index = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>CheapFetch - Home</title>
+      </Head>
       <Search> </Search> <CarrousselShops />
       <ListCategories> </ListCategories> <hr />
       <ListSimpleStore> </ListSimpleStore> <hr />

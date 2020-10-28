@@ -1,32 +1,32 @@
 {
-  "name": "CheapFetch",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/C5-CheapFetch/CheapFetch.git"
-  },
-  "keywords": [],
-  "author": "Masters CheapFetch",
-  "license": "",
-  "bugs": {
-    "url": "https://github.com/C5-CheapFetch/CheapFetch/issues"
-  },
-  "homepage": "https://github.com/C5-CheapFetch/CheapFetch#readme",
-  "dependencies": {
-    "next": "^9.5.5",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-icons": "^3.11.0",
-    "styled-components": "^5.2.0"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.11.1"
-  }
+    "name": "cheapfetch",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/C5-CheapFetch/CheapFetch.git"
+    },
+    "keywords": [],
+    "author": "Masters CheapFetch",
+    "license": "",
+    "bugs": {
+        "url": "https://github.com/C5-CheapFetch/CheapFetch/issues"
+    },
+    "homepage": "https://github.com/C5-CheapFetch/CheapFetch#readme",
+    "dependencies": {
+        "next": "^9.5.5",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "react-icons": "^3.11.0",
+        "styled-components": "^5.2.0"
+    },
+    "devDependencies": {
+        "babel-plugin-styled-components": "^1.11.1"
+    }
 }
