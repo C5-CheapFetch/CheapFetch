@@ -1,16 +1,27 @@
 import styled from 'styled-components'
 
+
 export const Background = styled.div`
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 600px;
 `
-export const Image = styled.img`
+export const Video = styled.div`
   width: 100%;
-  height: 400px;
+  background: linear-gradient(to bottom, #fac5c5, white);
+  height: calc(100vh - 100px);
+  object-fit: cover;
+  /* position: relative; */
+
+  & .search__video {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
 `
 export const Icon = styled.div`
   position: absolute;

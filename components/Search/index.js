@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { FaSearch } from 'react-icons/fa'
-import { Background, Image, SearchBar, Icon, Area } from './styles'
+import { Background, Video, SearchBar, Icon, Area } from './styles'
 import { useState } from 'react'
+import ReactPlayer from 'react-player'
 
 const Search = () => {
   const [text, setText] = useState('')
@@ -33,7 +34,18 @@ const Search = () => {
           </Icon>
         </Area>
       </Background>
-      <Image src='https://picsum.photos/seed/picsum/1200/500'></Image>
+      <Video>
+        <ReactPlayer 
+          className='search__video'
+          url='https://streamable.com/xc9ua4' 
+          width='100%'
+          height='100%'
+          playing={true}
+          loop={true}
+          controls={true}
+          volume={0}
+        />
+      </Video>
     </>
   )
 }
