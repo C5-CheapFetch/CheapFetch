@@ -2,25 +2,25 @@
 
 <!-- ![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo") -->
 
-![](https://img.shields.io/github/stars/Food-Market/letscook) ![](https://img.shields.io/github/forks/Food-Market/letscook)
+<!-- ![](https://img.shields.io/github/stars/Food-Market/letscook) ![](https://img.shields.io/github/forks/Food-Market/letscook)
 ![GitHub](https://img.shields.io/github/license/Food-Market/LetsCook?color=%232a9d8f)
-![](https://img.shields.io/github/release/Food-Market/letscook) ![](https://img.shields.io/github/issues/Food-Market/letscook)
+![](https://img.shields.io/github/release/Food-Market/letscook) ![](https://img.shields.io/github/issues/Food-Market/letscook) -->
 
 # 🧐💹 CheapFetch 😍〽
 
   </center>
 
-It Is a website for gastronomy passionates that don't have time to buy the products for their preparations.
+Cheap Fetch it's a very useful website that allows you to search a product along a the most popular web stores.
 
-The startup offers attractive subscriptions plans, great customer service and a high quality in the products.
+Our lema is "Search once, find everywhere" and we take it so seriously
 
 **SITE:**
 
-### http://app-letscook.herokuapp.com/
+###
 
 <center>
 
-![Previe-imagen](https://i.imgur.com/gtQVQGM.png)
+<!-- ![Previe-imagen](https://i.imgur.com/gtQVQGM.png) -->
 
 </center>
 
