@@ -35,6 +35,7 @@ const Index = () => {
         <title>CheapFetch - Home</title>
       </Head>
       <Search> </Search> <CarrousselShops />
+      <GridCards />
       <ListCategories> </ListCategories> <hr />
       <ListSimpleStore> </ListSimpleStore> <hr />
       <ListStores> </ListStores> <hr />
@@ -42,7 +43,6 @@ const Index = () => {
       <CardVertical />
       <CardHorizontal />
       <CardInfo />
-      <GridCards />
     </Layout>
   );
 };

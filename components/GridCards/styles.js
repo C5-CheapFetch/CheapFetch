@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+`
+
+export const Title = styled.h3`
+  font-size: 36px;
+  margin: 0px 0px 50px 0px;
+`
+
 export const Grid = styled.div`
   width: 834px;
   margin: 5px;
