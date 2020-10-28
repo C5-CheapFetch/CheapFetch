@@ -2,13 +2,13 @@ import React from 'react'
 
 import {Card, Image} from './styles'
 
-const CardHorizontal = ({img}) => {
+const CardHorizontal = ({picture_url}) => {
   
-  img = 'images/musicalbum.jpg'
+  picture_url = 'images/musicalbum.jpg'
 
   return(
     <Card>
-      <Image src={img} />
+      <Image src={picture_url} />
     </Card>
   )
 }

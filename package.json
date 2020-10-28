@@ -1,5 +1,5 @@
 {
-  "name": "CheapFetch",
+  "name": "cheapFetch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,6 +24,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
+    "react-player": "^2.6.2",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {

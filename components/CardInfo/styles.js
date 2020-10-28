@@ -11,22 +11,21 @@ export const Card = styled.div`
 
   /* hacer el border-radius angular */
   clip-path: polygon(
-  0 2%,
-  1% 0,
-  99% 0,
-  100% 2%,
-  100% 98%,
-  99% 100%,
-  1% 100%,
-  0% 98%,
-  0% 10%
+    0 5px,
+    5px 0,
+    calc(100% - 5px) 0px,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0% calc(100% - 5px)
   );
 
   &:hover{
     transform: scale(1.01);
     background-color: #fac5c5;
   }
-  &:hover #cardinfo__name {
+  &:hover .cardinfo__name {
     border-bottom: 3px solid #1c1c1c;
     white-space: normal; /*para que se vea el nombre entero al hacer hover */
   }
@@ -67,5 +66,5 @@ export const Price = styled.p`
 
 export const Store = styled.p`
   margin-top: 20%;
-
+  position: relative;
 `

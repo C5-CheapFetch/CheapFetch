@@ -2,13 +2,13 @@ import React from 'react'
 
 import {Card, Image} from './styles'
 
-const CardSquare = ({img}) => {
+const CardSquare = ({picture_url}) => {
   
-  img = 'images/keyboard.jpg'
+  picture_url = 'images/keyboard.jpg'
 
   return(
     <Card>
-      <Image src={img} />
+      <Image src={picture_url} />
     </Card>
   )
 }
