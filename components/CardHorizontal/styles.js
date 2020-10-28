@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-  width: 408px;
+  width: 403px;
   height: 194px;
   background-color: #FAC5C5;
   overflow:hidden;
