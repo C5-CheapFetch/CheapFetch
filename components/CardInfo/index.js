@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Card, Image, Info, Name, Price, Store } from './styles'
 
 const CardInfo = ({picture_url, name, price, stores}) => {
