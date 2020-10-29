@@ -25,7 +25,7 @@ const LoginComponent = () => {
       </Header>
       <Login>
         <Login__container>
-          <h2>Inicia Sesion</h2>
+          <h2>Registrarse</h2>
           <Login__container_form>
             <Input type="text" placeholder="Nombre y Apellido" />
             <Input type="text" placeholder="Correo" />
