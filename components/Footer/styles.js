@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const footer = styled.footer`
+export const Footer = styled.footer`
   background-color: #000;
   color: lavender;
   display: flex;
@@ -10,17 +10,18 @@ export const footer = styled.footer`
   box-sizing: border-box;
   padding: 20px;
 `;
-export const text = styled.div`
-  box-sizing: border-box;
-  margin: 10px;
-`;
 
 export const PlatziCheap = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
 
-export const social = styled.div`
+export const Text = styled.div`
+  box-sizing: border-box;
+  margin: 10px;
+`;
+
+export const Social = styled.div`
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
