@@ -28,7 +28,7 @@ const ListCategories = () => {
     <List>
       <Title>Categories</Title>
       {categories.map((c) => (
-        <CardCategory id={c.id} category={c.category}></CardCategory>
+        <CardCategory id={c.id} key={c.id} category={c.category}></CardCategory>
       ))}
     </List>
   )
