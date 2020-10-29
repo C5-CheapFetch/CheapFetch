@@ -5,13 +5,6 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import { CarrousselShops } from "../components/CarrousselShops";
 import Search from "../components/Search";
-import CardSquare from "../components/CardSquare";
-import CardVertical from "../components/CardVertical";
-import CardHorizontal from "../components/CardHorizontal";
-import CardInfo from "../components/CardInfo";
-// import ListSimpleStore from "../components/ListSimpleStore";
-// import ListCategories from "../components/ListCategories";
-import ListStores from "../components/ListStores";
 import GridCards from "../components/GridCards";
 
 const Index = () => {
@@ -34,15 +27,9 @@ const Index = () => {
       <Head>
         <title>CheapFetch - Home</title>
       </Head>
-      <Search> </Search> <CarrousselShops />
+      <Search />
+      <CarrousselShops />
       <GridCards />
-      {/* <ListCategories> </ListCategories> <hr />
-      <ListSimpleStore> </ListSimpleStore> <hr /> */}
-      <ListStores> </ListStores> <hr />
-      <CardSquare />
-      <CardVertical />
-      <CardHorizontal />
-      <CardInfo />
     </Layout>
   );
 };

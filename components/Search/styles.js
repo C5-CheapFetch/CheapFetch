@@ -8,9 +8,11 @@ export const Background = styled.div`
   align-items: center;
   width: 100%;
   height: 600px;
+  margin-bottom:100px;
 `
 export const Video = styled.div`
   width: 100%;
+  height:600px;
   background: linear-gradient(to bottom, #fac5c5, white);
   height: calc(100vh - 100px);
   object-fit: cover;
