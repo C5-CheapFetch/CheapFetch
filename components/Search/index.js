@@ -1,14 +1,15 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { FaSearch } from 'react-icons/fa'
 import { Background, Video, SearchBar, Icon, Area } from './styles'
 import { useState } from 'react'
 import ReactPlayer from 'react-player'
 
 const Search = () => {
+  const router = useRouter()
   const [text, setText] = useState('')
 
   const searchAction = () => {
-    alert(`Buscaste: ${text}`)
+    router.push(`/search/${text}`)
   }
   const handleChange = (e) => {
     setText(`${e.target.value}`)
