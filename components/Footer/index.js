@@ -1,14 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import { Footer, PlatziCheap, Social } from "./styles";
+import { Footer, PlatziCheap, Social, Text } from "./styles";
 
-const Footer = () => {
+const Footers = () => {
   return (
-    <Footer>
-      <PlatziCheap>
-        <p>2020 CHEAPFETCH, con 💚 de Platzi Master 18</p>
-      </PlatziCheap>
-      <div className="container">
+      <Footer>
+        <PlatziCheap>
+          <p>2020 CHEAPFETCH, con 💚 de Platzi Master 18</p>
+        </PlatziCheap>
         <Text>
           <p>About Us</p>
           <p>Help</p>
@@ -52,9 +51,8 @@ const Footer = () => {
             </a>
           </Link>
         </Social>
-      </div>
-    </Footer>
+      </Footer>
   );
 };
 
-export default Footer;
+export default Footers;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Footer = styled.footer`
+export const Footer = styled.article`
   background-color: #000;
   color: lavender;
   display: flex;

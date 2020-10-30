@@ -11,7 +11,7 @@ import ListSimpleStore from '../components/ListSimpleStore'
 import ListCategories from '../components/ListCategories'
 import ListStores from '../components/ListStores'
 import GridCards from '../components/GridCards'
-
+import Footers from "../components/Footer";
 const Index = () => {
 
   //FETCH A LA API DE PRUEBA
@@ -42,6 +42,7 @@ const Index = () => {
       <CardHorizontal />
       <CardInfo />
       <GridCards />
+      <Footers />
     </Layout>
   )
 }
