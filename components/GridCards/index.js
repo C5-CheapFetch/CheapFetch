@@ -1,5 +1,5 @@
-import React from 'react'
-import Context from '../../Context'
+import React,{ useContext } from 'react'
+import { Context } from '../Layout/index.js'
 
 import { Grid, Container, Title } from './styles'
 
@@ -9,55 +9,57 @@ import CardVertical from '../CardVertical'
 
 const GridCards = () => {
 
+  //useContext cumple la función del consumer
+  const {products} = useContext(Context)
+  // const {products, setProducts} = useContext(Context)
+
+  console.log(products)
+
+
   return(
     <Container>
       <Title>Trending Products</Title>
-      <Context.Consumer>
-        {
-          ({ itemList }) =>
-          <Grid>
-            <div className='grid__vertical'>
-              <CardVertical {...itemList[10]}/>
-            </div>
-            <div className='grid__square' >
-              <CardSquare {...itemList[30]}/>
-            </div>
-            <div className='grid__horizontal'>
-              <CardHorizontal {...itemList[50]}/>
-            </div>
-            <div className='grid__horizontal--second'>
-              <CardHorizontal {...itemList[70]}/>
-            </div>
-            <div className='grid__square--second'>
-              <CardSquare {...itemList[90]}/>
-            </div>
-            <div className='grid__square--third' >
-              <CardSquare {...itemList[110]}/>
-            </div>
-            <div className='grid__squareTwo--third' >
-              <CardSquare {...itemList[130]}/>
-            </div>
-            <div className="grid__vertical--third">
-              <CardVertical {...itemList[150]}/>
-            </div>
-            <div className="grid__squareThree--thrid">
-              <CardSquare {...itemList[170]}/>
-            </div>
-            <div className="grid__horizontal--fourth">
-              <CardHorizontal {...itemList[190]}/>
-            </div>
-            <div className="grid__vertical--fourth">
-              <CardVertical {...itemList[210]}/>
-            </div>
-            <div className="grid__square--fifth">
-              <CardSquare {...itemList[230]}/>
-            </div>
-            <div className="grid__horizontal--fifth">
-              <CardHorizontal {...itemList[250]}/>
-            </div>
-          </Grid>
-        }
-      </Context.Consumer>
+      <Grid>
+        <div className='grid__vertical'>
+          <CardVertical {...products[0]} />
+        </div>
+        <div className='grid__square' >
+          <CardSquare />
+        </div>
+        <div className='grid__horizontal'>
+          <CardHorizontal />
+        </div>
+        <div className='grid__horizontal--second'>
+          <CardHorizontal />
+        </div>
+        <div className='grid__square--second'>
+          <CardSquare />
+        </div>
+        <div className='grid__square--third' >
+          <CardSquare />
+        </div>
+        <div className='grid__squareTwo--third' >
+          <CardSquare />
+        </div>
+        <div className="grid__vertical--third">
+          <CardVertical />
+        </div>
+        <div className="grid__squareThree--thrid">
+          <CardSquare />
+        </div>
+        <div className="grid__horizontal--fourth">
+          <CardHorizontal />
+        </div>
+        <div className="grid__vertical--fourth">
+          <CardVertical />
+        </div>
+        <div className="grid__square--fifth">
+          <CardSquare />
+        </div>
+        <div className="grid__horizontal--fifth">
+          <CardHorizontal />
+        </div>
+      </Grid>
     </Container>
   )
 }

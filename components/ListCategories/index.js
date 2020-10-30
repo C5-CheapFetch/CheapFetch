@@ -1,3 +1,4 @@
+import Context from '../../Context'
 import CardCategory from '../CardCategory'
 import { List, Title } from './styles'
 
@@ -5,11 +6,11 @@ const ListCategories = () => {
   const categories = [
     {
       id: '1',
-      category: 'Games',
+      category: 'Phones',
     },
     {
       id: '1',
-      category: 'Electronic',
+      category: 'Cars & Motorcycles',
     },
     {
       id: '1',

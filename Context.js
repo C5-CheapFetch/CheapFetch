@@ -1,35 +1,37 @@
-import React, { createContext, useState, useEffect } from 'react'
-import { useFetchApi } from './hooks/useFetchApi'
+// import React, { createContext } from 'react'
 
-const Context = createContext()
-
-const Provider = ({ children }) => {
-  const [itemList, setItemList] = useState([])
-
-  //FETCH A LA API DE PRUEBA
-  const [data] = useFetchApi("https://apidjangoprueba.azurewebsites.net/api/items-list/")
+// export const Context = createContext()
 
 
-  useEffect( () => {
-    setItemList(data);
-  }, [])
+// ___esta sección es lo que hizo en un principio para context api usando 
+// render props___
 
-  const value = {
-    itemList,
-    setItemList
-  }
-  
-  // console.log(data)
-  // console.log(itemList)
+// const Provider = ({ children, items }) => {
+//   // const [itemList, setItemList] = useState(items)
 
-  return (
-    <Context.Provider value={value}>
-      {children}
-    </Context.Provider>
-  )
-}
+//   //FETCH A LA API DE PRUEBA
+//   // const [data] = useFetchApi("https://apidjangoprueba.azurewebsites.net/api/items-list/")
 
-export default { 
-  Provider,
-  Consumer: Context.Consumer
-}
+
+//   // useEffect( () => {
+//   //   setItemList(data);
+//   //   console.log(data)
+//   //   console.log(itemList)
+//   // }, [])
+
+//   const value = {
+//     items,
+//     children
+//   }
+
+//   return (
+//     <Context.Provider value={value}>
+//       {items}
+//     </Context.Provider>
+//   )
+// }
+
+// export default { 
+//   Provider,
+//   Consumer: Context.Consumer
+// }
