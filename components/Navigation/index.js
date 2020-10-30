@@ -6,6 +6,11 @@ const Navigation = () => {
     <Nav>
       <List>
         <li>
+          <Link href="/login">
+            <Anchor> Login </Anchor>
+          </Link>
+        </li>
+        <li>
           <Link href="/">
             <Anchor> Home </Anchor>
           </Link>
