@@ -35,6 +35,11 @@ const Navigation = () => {
             <Anchor> Logout </Anchor>
           </Link>
         </li>
+        <li key="/api/me">
+          <Link href="/api/me">
+            <Anchor> Profile </Anchor>
+          </Link>
+        </li>
       </List>
     </Nav>
   );
