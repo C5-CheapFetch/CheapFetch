@@ -16,7 +16,7 @@ export const CarrousselShops = () => {
     <Slider>
       <SlideTrack>
         {images.map((img) => (
-          <Slide>
+          <Slide key={img}>
             <img src={img} height='100' alt='shop' />
           </Slide>
         ))}
