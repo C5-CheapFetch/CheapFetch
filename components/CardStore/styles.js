@@ -12,7 +12,7 @@ export const Card = styled.div`
   margin: 16px;
   &:hover {
     background-color: #fac5c5;
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
   /* hacer el border-radius angular */
   clip-path: polygon(

@@ -19,8 +19,8 @@ const ListCategories = () => {
   return (
     <List>
       <Title>Categories</Title>
-      {categories.map((c) => (
-        <CardCategory id={c.id} key={c.id} category={c}></CardCategory>
+      {categories.map((c,key) => (
+        <CardCategory key={key} category={c}></CardCategory>
       ))}
     </List>
   )

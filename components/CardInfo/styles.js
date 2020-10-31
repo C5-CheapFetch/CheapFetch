@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-margin:18px;
+  margin: 18px;
   width: 620px;
   height: 250px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 50% 50%;
   /* overflow: hidden; */
@@ -22,13 +22,18 @@ margin:18px;
     0% calc(100% - 5px)
   );
 
-  &:hover{
+  &:hover {
     transform: scale(1.01);
     background-color: #fac5c5;
   }
   &:hover .cardinfo__name {
     border-bottom: 3px solid #1c1c1c;
     white-space: normal; /*para que se vea el nombre entero al hacer hover */
+  }
+  //Tablet hacia abajo
+  @media (max-width: 768px) {
+    width: 480px;
+    height: 200px;
   }
 `
 
@@ -39,7 +44,7 @@ export const Image = styled.img`
   object-fit: cover;
 `
 
-export const Info = styled.div `
+export const Info = styled.div`
   width: 100%;
   height: inherit;
   grid-column: 2 / 3;
@@ -48,7 +53,7 @@ export const Info = styled.div `
   align-items: center;
 `
 
-export const Name = styled.p `
+export const Name = styled.p`
   font-size: 24px;
   color: #1c1c1c;
   width: 80%;
@@ -66,6 +71,12 @@ export const Price = styled.p`
 `
 
 export const Store = styled.p`
-  margin-top: 20%;
-  position: relative;
+  margin-top: 200px;
+  position: absolute;
+`
+
+export const Url = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: #1c1c1c;
 `

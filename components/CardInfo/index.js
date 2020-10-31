@@ -1,20 +1,18 @@
-import { Card, Image, Info, Name, Price, Store } from './styles'
+import { Card, Image, Info, Name, Price, Store, Url } from './styles'
 
-const CardInfo = ({picture_url, name, price, stores}) => {
-  picture_url = '/images/camera.jpg'
-  name = 'Product Name 24px lorem ipsum'
-  price = 999.99
-  stores = 'Amazon'
+const CardInfo = ({picture, name, price, stores, url_located}) => {
 
   return (
+    <Url href={url_located} target='_blank'>
     <Card>
-      <Image src={picture_url} />
+      <Image src={picture} />
       <Info>
         <Name className='cardinfo__name'>{name}</Name>
-        <Price>${price}</Price>
+        <Price>${price} COP</Price>
         <Store>{stores}</Store>
       </Info>
     </Card>
+    </Url>
   )
 }
 
