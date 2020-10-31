@@ -1,15 +1,14 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import Search from '../../components/Search'
+import SearchBar from '../../components/SearchBar'
 import ListCardInfo from '../../components/ListCardInfo'
 import { useRouter } from 'next/router'
 
 const search = () => {
   const router = useRouter()
-  console.log(router.query)
   return (
     <Layout>
-      <Search />
+      <SearchBar />
       <ListCardInfo search={router.query.search} />
     </Layout>
   )

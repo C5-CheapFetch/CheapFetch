@@ -8,11 +8,17 @@ export const Anchor = styled.a `
   width: 75px;
   cursor: pointer;
 `;
-export const Nav = styled.div `
+export const Nav = styled.div`
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, .7) 100%
+  );
   color: white;
-`;
+`
 export const List = styled.ul `
   display: flex;
   justify-content: center;

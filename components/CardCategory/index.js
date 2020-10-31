@@ -1,14 +1,11 @@
 import { useRouter } from 'next/router'
 import { Card, Category, Line } from './styles'
 
-const CardStore = ({ category, id }) => {
+const CardStore = ({ category}) => {
     const router = useRouter()
 
   const redirect = () => {
-     
-        router.push(`/search//${category}`)
-    
-
+        router.push(`/search/all/${category}`)
   }
 
   return (

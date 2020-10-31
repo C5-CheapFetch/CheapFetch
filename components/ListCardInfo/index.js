@@ -1,30 +1,54 @@
 import CardInfo from '../CardInfo'
-import { List, Title, TitlePink } from './styles'
-
-import { useContext, useEffect, useState } from 'react'
+import { List, Title, TitlePink, Container } from './styles'
+import { useContext } from 'react'
 import { Context } from '../Layout/index.js'
 
 const ListCardInfo = ({ search }) => {
   const { products } = useContext(Context)
   const text = search[0]
   const category = search[1]
-  const [result, setState] = useState([])
 
-  useEffect(() => {
-    setState(products.filter((r) => r.category.includes(category)))
-  })
+  const getSearch = () => {
+    //Funcion para filtrar los resultados
+    return products.filter((r) => {
+      if (text === 'all') {
+        return r.category.includes(category)
+      } else if (category === 'all') {
+        return r.name.toLowerCase().includes(text.toLowerCase())
+      } else {
+        return (
+          r.category.includes(category) &&
+          r.name.toLowerCase().includes(text.toLowerCase())
+        )
+      }
+    })
+  }
 
   return (
     <List>
-      <Title>
-        You searched for: <TitlePink>{text}</TitlePink>
-      </Title>
+      {getSearch().length === 0 ? (
+        <Title>
+          No results for: <TitlePink>{text}</TitlePink>
+        </Title>
+      ) : (
+        <Title>
+          You searched for: <TitlePink>{text}</TitlePink>
+        </Title>
+      )}
       <Title>
         Category: <TitlePink>{category}</TitlePink>
       </Title>
-      {result.map((r) => (
-        <CardInfo></CardInfo>
-      ))}
+
+      <Container>
+        {getSearch().map((r) => (
+          <CardInfo
+            key={r.id}
+            picture={r['picture_url']}
+            price={r.price}
+            name={r.name}
+          ></CardInfo>
+        ))}
+      </Container>
     </List>
   )
 }
