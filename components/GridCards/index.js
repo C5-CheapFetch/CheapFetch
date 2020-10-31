@@ -11,9 +11,9 @@ const GridCards = () => {
 
   //useContext cumple la función del consumer
   const {products} = useContext(Context)
-  // const {products, setProducts} = useContext(Context)
 
-  console.log(products)
+  // lo de abajo es como se usa useContext, pero, como no cambiaremos el valor del estado, por eso se omitió el setProducts
+  // const {products, setProducts} = useContext(Context)
 
 
   return(
@@ -24,40 +24,40 @@ const GridCards = () => {
           <CardVertical {...products[0]} />
         </div>
         <div className='grid__square' >
-          <CardSquare />
+          <CardSquare {...products[10]}/>
         </div>
         <div className='grid__horizontal'>
-          <CardHorizontal />
+          <CardHorizontal {...products[20]}/>
         </div>
         <div className='grid__horizontal--second'>
-          <CardHorizontal />
+          <CardHorizontal {...products[30]}/>
         </div>
         <div className='grid__square--second'>
-          <CardSquare />
+          <CardSquare {...products[40]}/>
         </div>
         <div className='grid__square--third' >
-          <CardSquare />
+          <CardSquare {...products[50]}/>
         </div>
         <div className='grid__squareTwo--third' >
-          <CardSquare />
+          <CardSquare {...products[60]}/>
         </div>
         <div className="grid__vertical--third">
-          <CardVertical />
+          <CardVertical {...products[70]}/>
         </div>
         <div className="grid__squareThree--thrid">
-          <CardSquare />
+          <CardSquare {...products[80]}/>
         </div>
         <div className="grid__horizontal--fourth">
-          <CardHorizontal />
+          <CardHorizontal {...products[90]}/>
         </div>
         <div className="grid__vertical--fourth">
-          <CardVertical />
+          <CardVertical {...products[100]}/>
         </div>
         <div className="grid__square--fifth">
-          <CardSquare />
+          <CardSquare {...products[110]}/>
         </div>
         <div className="grid__horizontal--fifth">
-          <CardHorizontal />
+          <CardHorizontal {...products[120]}/>
         </div>
       </Grid>
     </Container>

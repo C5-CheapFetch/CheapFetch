@@ -1,7 +1,5 @@
 import React from "react";
-import { useFetchApi } from "../hooks/useFetchApi";
 import Head from "next/head";
-import { Context } from '../Context'
 
 import Layout from "../components/Layout";
 import { CarrousselShops } from "../components/CarrousselShops";
@@ -9,8 +7,6 @@ import Search from "../components/Search";
 import GridCards from "../components/GridCards";
 
 const Index = () => {
-
-  // const [data] = useFetchApi("https://apidjangoprueba.azurewebsites.net/api/items-list/")
 
 
   return (

@@ -1,35 +1,26 @@
-import Context from '../../Context'
+import React, { useContext } from 'react'
+import { Context } from '../Layout/index.js'
 import CardCategory from '../CardCategory'
 import { List, Title } from './styles'
 
 const ListCategories = () => {
-  const categories = [
-    {
-      id: '1',
-      category: 'Phones',
-    },
-    {
-      id: '1',
-      category: 'Cars & Motorcycles',
-    },
-    {
-      id: '1',
-      category: 'Computers',
-    },
-    {
-      id: '1',
-      category: 'Cell phones',
-    },
-    {
-      id: '1',
-      category: 'Other',
-    },
-  ]
+
+  const {products} = useContext(Context)
+
+  let categories = []
+
+  products.forEach(r => {
+    if (!categories.includes(r.category)) {
+        categories.push(r.category)
+    }
+  })
+
+
   return (
     <List>
       <Title>Categories</Title>
       {categories.map((c) => (
-        <CardCategory id={c.id} key={c.id} category={c.category}></CardCategory>
+        <CardCategory id={c.id} key={c.id} category={c}></CardCategory>
       ))}
     </List>
   )
