@@ -43,7 +43,7 @@ const Search = () => {
           height='100%'
           playing={true}
           loop={true}
-          controls={true}
+          controls={false}
           volume={0}
         />
       </Video>

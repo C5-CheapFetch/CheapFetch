@@ -4,7 +4,7 @@ import {Card, Image} from './styles'
 
 const CardVertical = ({picture_url}) => {
   
-  picture_url = 'images/camera.jpg'
+  // picture_url = 'images/camera.jpg'
 
   return(
     <Card>

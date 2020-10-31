@@ -4,7 +4,7 @@ import {Card, Image} from './styles'
 
 const CardHorizontal = ({picture_url}) => {
   
-  picture_url = 'images/musicalbum.jpg'
+  // picture_url = 'images/musicalbum.jpg'
 
   return(
     <Card>
