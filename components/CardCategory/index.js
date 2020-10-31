@@ -1,10 +1,14 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Card, Category, Line } from './styles'
 
 const CardStore = ({ category, id }) => {
+    const router = useRouter()
 
   const redirect = () => {
-    alert(`Ir a la categoria: ${category}`)
+     
+        router.push(`/search//${category}`)
+    
+
   }
 
   return (

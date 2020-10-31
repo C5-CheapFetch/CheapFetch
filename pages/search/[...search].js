@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 
 const search = () => {
   const router = useRouter()
+  console.log(router.query)
   return (
     <Layout>
       <Search />
