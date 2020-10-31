@@ -71,6 +71,12 @@ export const Price = styled.p`
 `
 
 export const Store = styled.p`
-  margin-top: 20%;
-  position: relative;
+  margin-top: 200px;
+  position: absolute;
+`
+
+export const Url = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: #1c1c1c;
 `

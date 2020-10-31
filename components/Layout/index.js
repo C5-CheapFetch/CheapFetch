@@ -16,7 +16,7 @@ const Layout = (props) => {
     async function getStaticProps() {
       
       //fetch a la api
-      const res = await fetch('https://apidjangoprueba.azurewebsites.net/api/items-list/')
+      const res = await fetch('https://apidepruebas.azurewebsites.net/api/items-list/')
       const data = await res.json()
 
       setProducts(data)
