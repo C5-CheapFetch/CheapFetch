@@ -6,33 +6,33 @@ const Navigation = () => {
     <Nav>
       <List>
         <li>
-          <Link href="/login">
-            <Anchor> Login </Anchor>
-          </Link>
-        </li>
-        <li>
-          <Link href="/logout">
-            <Anchor> Logout </Anchor>
-          </Link>
-        </li>
-        <li>
           <Link href="/">
             <Anchor> Home </Anchor>
-          </Link>
-        </li>
+          </Link>{" "}
+        </li>{" "}
         <li>
           <Link href="/categories">
             <Anchor> Categories </Anchor>
-          </Link>
+          </Link>{" "}
         </li>
         {/* <li>
-          <Link href="/">
-            <Anchor> About </Anchor>
-          </Link>
-        </li> */}
+                      <Link href="/">
+                        <Anchor> About </Anchor>
+                      </Link>
+                    </li> */}
         <li>
           <Link href="/stores">
             <Anchor> Stores </Anchor>
+          </Link>
+        </li>
+        <li key="/api/login">
+          <Link href="/api/login">
+            <Anchor> Login </Anchor>
+          </Link>
+        </li>
+        <li key="/api/logout">
+          <Link href="/api/logout">
+            <Anchor> Logout </Anchor>
           </Link>
         </li>
       </List>
