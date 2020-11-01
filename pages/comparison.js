@@ -1,3 +1,5 @@
 import React from "react";
 
-export const Comparison = () => <h1> Comparison Page </h1>;
+const Comparison = () => <h1> Comparison Page </h1>;
+
+export default Comparison;
