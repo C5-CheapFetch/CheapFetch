@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Anchor, Nav, List, Figure, Div } from "./styles";
+import { Anchor, Nav, List, Figure, Div, Button, ButtonA } from "./styles";
 
 const Navigation = () => {
   return (
@@ -26,6 +26,16 @@ const Navigation = () => {
             <Link href="/stores">
               <Anchor> Stores </Anchor>
             </Link>
+          </li>
+          <li>
+            <Button href="/stores">
+              <ButtonA> Registro </ButtonA>
+            </Button>
+          </li>
+          <li>
+            <Button href="/">
+              <ButtonA> Inicio </ButtonA>
+            </Button>
           </li>
         </List>
       </Nav>
