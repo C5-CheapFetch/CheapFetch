@@ -5,6 +5,8 @@ import Layout from "../components/Layout";
 import { CarrousselShops } from "../components/CarrousselShops";
 import SearchHome from "../components/SearchHome";
 import GridCards from "../components/GridCards";
+import Footers from "../components/Footer";
+import { AppDescription } from "../components/AppDescription";
 
 const Index = () => {
   return (
@@ -14,7 +16,9 @@ const Index = () => {
       </Head>{" "}
       <SearchHome />
       <CarrousselShops />
+      <AppDescription />
       <GridCards />
+      <Footers />
     </Layout>
   );
 };

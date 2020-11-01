@@ -23,8 +23,8 @@ export const SearchBar = styled.input`
   margin:0;
   font-size: 26px;
   border-radius: 12px;
-  border: 3px solid #1c1c1c;
-  background-color: #fac5c5;
+  border: 6px solid #fac5c5;
+  background-color: white;
   opacity: 0.8;
 `
 
