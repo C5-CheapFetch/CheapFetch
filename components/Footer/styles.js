@@ -9,6 +9,11 @@ export const Footer = styled.article`
   flex-wrap: wrap;
   box-sizing: border-box;
   padding: 20px;
+  @media (max-width: 767px){
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+}
 `;
 
 export const PlatziCheap = styled.div`
@@ -31,3 +36,5 @@ export const Social = styled.div`
   padding-left: 50px;
   padding-bottom: 10px;
 `;
+
+
