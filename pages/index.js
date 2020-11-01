@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import { CarrousselShops } from "../components/CarrousselShops";
 import SearchHome from "../components/SearchHome";
 import GridCards from "../components/GridCards";
+import Footers from "../components/Footer";
 
 const Index = () => {
 
@@ -17,6 +18,7 @@ const Index = () => {
       <SearchHome />
       <CarrousselShops />
       <GridCards />
+      <Footers />
     </Layout>
   );
 };
