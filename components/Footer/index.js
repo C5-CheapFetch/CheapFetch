@@ -6,7 +6,7 @@ const Footers = () => {
   return (
       <Footer>
         <PlatziCheap>
-          <p>2020 CHEAPFETCH, con 💚 de Platzi Master 18</p>
+          <p>2020 CHEAPFETCH con 💚 de Platzi Master 18</p>
         </PlatziCheap>
         <Text>
           <p>About Us</p>
