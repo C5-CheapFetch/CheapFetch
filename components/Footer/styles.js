@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const Footer = styled.article`
-  background-color: #000;
+  background-color: #1c1c1c;
+  height: 150px;
   color: lavender;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  box-sizing: border-box;
   padding: 20px;
+
+
   @media (max-width: 767px){
     display: block;
     text-align: center;
@@ -17,24 +19,30 @@ export const Footer = styled.article`
 `;
 
 export const PlatziCheap = styled.div`
-  display: flex;
-  justify-content: flex-end;
+   background-color: #1C1C1C;
+    color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;
 `;
 
 export const Text = styled.div`
-  box-sizing: border-box;
   margin: 10px;
+  padding: 40px;
+  
 `;
 
 export const Social = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
-  width: 20px;
-  height: 60px;
-  margin: 10px;
-  padding-left: 50px;
-  padding-bottom: 10px;
+    color: #f4fbff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
 `;
+
 
 
