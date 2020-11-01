@@ -4,29 +4,29 @@ import { Footer, PlatziCheap, Social, Text } from "./styles";
 
 const Footers = () => {
   return (
-      <Footer>
-        <PlatziCheap>
-          <p>2020 CHEAPFETCH, con 💚 de Platzi Master 18</p>
-        </PlatziCheap>
+    <Footer>
+      <PlatziCheap>
+        <p>2020 CHEAPFETCH, con 💚 de Platzi Master 18</p>
+      </PlatziCheap>
+      <Social>
         <Text>
           <p>About Us</p>
           <p>Help</p>
           <p>Follow Us</p>
         </Text>
-        <Social>
-          <Link href="">
-            <a className="social_link twitter">
-              <img
-                src="images/icons8-twitter.svg"
-                height={50}
-                alt="Logo de Twitter"
+        <Link href="">
+          <a className="social_link twitter">
+            <img
+              src="images/twitter.svg"
+              height={50}
+              alt="Logo de Twitter"
               />
             </a>
           </Link>
           <Link href="">
             <a className="social_link facebook">
               <img
-                src="images/icons8-facebook.svg"
+                src="images/facebook.svg"
                 height={50}
                 alt="Logo de Facebook"
               />
@@ -35,7 +35,7 @@ const Footers = () => {
           <Link href="">
             <a className="social_link tiktok">
               <img
-                src="images/icons8-tik-tok.svg"
+                src="images/github.svg"
                 height={50}
                 alt="Logo de Tiktok"
               />
@@ -44,7 +44,7 @@ const Footers = () => {
           <Link href="">
             <a href="/" className="social_link instagram">
               <img
-                src="images/icons8-instagram.svg"
+                src="images/instagram.svg"
                 height={50}
                 alt="Logo de instagram"
               />
