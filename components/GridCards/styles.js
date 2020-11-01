@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 `
 
 export const Title = styled.h3`
@@ -25,6 +25,7 @@ export const Grid = styled.div`
     grid-template-columns: repeat(2, 210px) ;
     grid-template-rows: repeat(10, 210px);
     width: 400px;
+    height: 2150px;
   }
 
   & .grid__vertical {
