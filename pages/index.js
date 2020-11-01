@@ -6,15 +6,14 @@ import { CarrousselShops } from "../components/CarrousselShops";
 import SearchHome from "../components/SearchHome";
 import GridCards from "../components/GridCards";
 import Footers from "../components/Footer";
-import { AppDescription } from '../components/AppDescription';
+import { AppDescription } from "../components/AppDescription";
 
 const Index = () => {
-
   return (
     <Layout>
       <Head>
-        <title>CheapFetch - Home</title>
-      </Head>
+        <title> CheapFetch - Home </title>{" "}
+      </Head>{" "}
       <SearchHome />
       <CarrousselShops />
       <AppDescription />
@@ -23,6 +22,5 @@ const Index = () => {
     </Layout>
   );
 };
-
 
 export default Index;
