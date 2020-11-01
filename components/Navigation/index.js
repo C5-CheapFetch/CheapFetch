@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Anchor, Nav, List, Figure, Div, Button, ButtonA } from "./styles";
+import RightNav from '../RightNav';
+import { Nav, Figure, Div} from "./styles";
 
 const Navigation = () => {
   return (
@@ -11,33 +12,7 @@ const Navigation = () => {
         alt="Logo de CheapFetch"
         />
       </Figure> 
-        <List>
-          <li>
-            <Link href="/">
-              <Anchor> Home </Anchor>
-            </Link>
-          </li>
-          <li>
-            <Link href="/categories">
-              <Anchor> Categories </Anchor>
-            </Link>
-          </li>
-          <li>
-            <Link href="/stores">
-              <Anchor> Stores </Anchor>
-            </Link>
-          </li>
-          <li>
-            <Button href="/stores">
-              <ButtonA> Registro </ButtonA>
-            </Button>
-          </li>
-          <li>
-            <Button href="/">
-              <ButtonA> Inicio </ButtonA>
-            </Button>
-          </li>
-        </List>
+      <RightNav />  
       </Nav>
     </Div>
   );
