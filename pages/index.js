@@ -10,7 +10,6 @@ import { AppDescription } from '../components/AppDescription';
 
 const Index = () => {
 
-
   return (
     <Layout>
       <Head>
