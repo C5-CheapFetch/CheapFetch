@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
+import Logo from '../public/images/logo.svg'
 import Layout from "../components/Layout";
 import { CarrousselShops } from "../components/CarrousselShops";
 import SearchHome from "../components/SearchHome";

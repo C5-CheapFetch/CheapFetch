@@ -6,10 +6,10 @@ export const AppDescription = () => {
 
   return(
     <Container>
-      <Name>Qué es <br/> CheapFetch?</Name>
+      <Name>What is <br/> CheapFetch?</Name>
       <Description>
-        Cheap Fetch es un sitio web muy útil que te permite buscar un producto en las tiendas web más populares. <br/><br/>
-        Nuestro lema es "Buscar una vez, encontrar en todas partes" y nos lo tomamos muy en serio. :)
+        Cheap Fetch it's a very useful website that allows you to search a product along a the most popular web stores. <br/><br/>
+        Our lema is "Search once, find everywhere" and we take it so seriously. :)
       </Description>
     </Container>
   )
