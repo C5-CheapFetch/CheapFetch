@@ -47,9 +47,10 @@ const ListCardInfo = ({ search }) => {
           You searched for: <TitlePink>{text}</TitlePink>
         </Title>
       )}
+      <br />
       <Title>
         Category: <TitlePink>{category}</TitlePink>
-        <SelectCategory />
+        <SelectCategory category={category} text={text} />
       </Title>
 
       <Container>
