@@ -2,7 +2,7 @@ import React,{ useState, createContext, useEffect } from 'react'
 import Head from 'next/head'
 import Navigation from '../Navbar/Navigation'
 import { GlobalStyles } from '../../GlobalStyles'
-import Footers from '../Footer'
+import Footers from '../Footer/index.js'
 
 
 export const Context = createContext()
