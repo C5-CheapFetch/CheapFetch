@@ -18,7 +18,6 @@ const Index = () => {
       <SearchHome />
       <CarrousselShops />
       <AppDescription />
-      <Logo />
       <GridCards />
       <Footers />
     </Layout>
