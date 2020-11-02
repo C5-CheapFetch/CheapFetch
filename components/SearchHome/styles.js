@@ -40,7 +40,7 @@ export const Container = styled.div`
 
 export const Gradient = styled.div`
   position: absolute;
-  top: 500px;
+  top: 470px;
   z-index: -1;
   background: linear-gradient(
     to bottom,
@@ -57,7 +57,7 @@ export const Gradient = styled.div`
 
 export const Separator = styled.div`
   position: absolute;
-  top: 500px;
+  top: 470px;
   z-index: -1;
   width: 100%;
   height: 1000px;

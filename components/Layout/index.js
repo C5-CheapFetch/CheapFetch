@@ -1,6 +1,6 @@
 import React,{ useState, createContext, useEffect } from 'react'
 import Head from 'next/head'
-import Navigation from '../Navigation'
+import Navigation from '../Navbar/Navigation'
 import { GlobalStyles } from '../../GlobalStyles'
 
 
