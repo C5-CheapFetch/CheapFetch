@@ -40,13 +40,8 @@ export const Button = styled.button`
   );
 
   @media (max-width: 767px) {
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    cursor: pointer;
-    margin: 10px;
-    border: none;
+    position:absolute;
+    right:8px;
+    top:16px;
   }
 `

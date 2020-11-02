@@ -36,6 +36,7 @@ export const Text = styled.div`
 
 export const Social = styled.div`
     color: #f4fbff;
+
     height: 200px;
     display: flex;
     align-items: center;
@@ -43,6 +44,10 @@ export const Social = styled.div`
     flex-wrap: wrap;
     margin: 10px;
 `;
+
+export const Img = styled.img`
+  margin-right: 8px;
+`
 
 
 

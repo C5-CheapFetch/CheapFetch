@@ -17,9 +17,14 @@ export const Video = styled.div`
     left: 0;
     object-fit: fill;
   }
+  @media (max-width: 1024px) {
+    top: -15vh;
+    width: 115%;
+  }
 
   @media (max-width: 768px) {
-    top: -10vh;
+    top: -20vh;
+    width: 115%;
   }
 `
 
@@ -50,7 +55,7 @@ export const Gradient = styled.div`
   width: 100%;
   height: 400px;
   @media (max-width: 768px) {
-    height: 200px;
+    height: 400px;
     top: 300px;
   }
 `
@@ -63,7 +68,8 @@ export const Separator = styled.div`
   height: 1000px;
   background-color: white;
   @media (max-width: 768px) {
-    height: 200px;
+    height: 400px;
     top: 300px;
   }
 `
+

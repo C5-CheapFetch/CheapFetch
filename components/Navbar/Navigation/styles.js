@@ -16,8 +16,8 @@ export const Nav = styled.div`
   );
 
   @media (max-width: 767px) {
-    display: block;
-    height: 360px;
+    height: 120px;
+    grid-template-columns: 1fr ;
   }
 `
 
@@ -26,13 +26,27 @@ export const Menu = styled.img`
   max-width: 100%;
 `
 
-export const Logo = styled.figure`
+export const LogoContainer = styled.div`
   height: 100px;
-  width: 300px;
-  background: red;
+  width: 280px;
   position: absolute;
-  top: 25px;
+  /* background-color: red; */
+  top: -15px;
   left: 100px;
+
+  @media (max-width: 1024px) {
+    left: 70px;
+    width: 180px;
+  }
+
+  @media (max-width: 767px) {
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -40px;
+  }
 `
 
 export const Anchor = styled.a`

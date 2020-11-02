@@ -2,7 +2,7 @@ import React,{ useState, createContext, useEffect } from 'react'
 import Head from 'next/head'
 import Navigation from '../Navbar/Navigation'
 import { GlobalStyles } from '../../GlobalStyles'
-
+import Footers from '../Footer'
 
 
 export const Context = createContext()
@@ -29,13 +29,14 @@ const Layout = (props) => {
 
   return (
     <div>
-      <Context.Provider value={ {products, setProducts} }>
+      <Context.Provider value={{ products, setProducts }}>
         <Head>
           <title>CheapFetch</title>
         </Head>
         <GlobalStyles />
         <Navigation />
         <div>{props.children}</div>
+        <Footers />
       </Context.Provider>
     </div>
   )
