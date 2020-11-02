@@ -46,6 +46,8 @@ const ListCardInfo = ({ search }) => {
             picture={r['picture_url']}
             price={r.price}
             name={r.name}
+            stores={r.stores}
+            url_located={r.url_located}
           ></CardInfo>
         ))}
       </Container>

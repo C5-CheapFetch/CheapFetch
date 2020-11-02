@@ -7,7 +7,6 @@ const Search = () => {
     <>
       <Container>
         <SearchBar></SearchBar>
-
         <Video>
           <ReactPlayer
             className='search__video'

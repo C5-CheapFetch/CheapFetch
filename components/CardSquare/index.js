@@ -2,14 +2,14 @@ import React from 'react'
 
 import {Card, Image} from './styles'
 
-const CardSquare = ({picture_url}) => {
-  
-  // picture_url = 'images/keyboard.jpg'
+const CardSquare = ({picture_url, url_located}) => {
 
   return(
-    <Card>
-      <Image src={picture_url} />
-    </Card>
+    <a href={url_located} target='_blank'>
+      <Card>
+        <Image src={picture_url} />
+      </Card>
+    </a>
   )
 }
 

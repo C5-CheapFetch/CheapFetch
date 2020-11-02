@@ -18,9 +18,9 @@ export const Area = styled.div`
   }
 `
 export const SearchBar = styled.input`
-  width:100%;
+  width: 100%;
   padding: 4px 18px 4px 18px;
-  margin:0;
+  margin: 0;
   font-size: 26px;
   border-radius: 12px;
   border: 3px solid #1c1c1c;

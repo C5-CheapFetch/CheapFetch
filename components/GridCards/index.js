@@ -48,16 +48,16 @@ const GridCards = () => {
           <CardSquare {...products[80]}/>
         </div>
         <div className="grid__horizontal--fourth">
-          <CardHorizontal {...products[90]}/>
+          <CardHorizontal {...products[163]}/>
         </div>
         <div className="grid__vertical--fourth">
-          <CardVertical {...products[100]}/>
+          <CardVertical {...products[3]}/>
         </div>
         <div className="grid__square--fifth">
           <CardSquare {...products[110]}/>
         </div>
         <div className="grid__horizontal--fifth">
-          <CardHorizontal {...products[120]}/>
+          <CardHorizontal {...products[140]}/>
         </div>
       </Grid>
     </Container>
