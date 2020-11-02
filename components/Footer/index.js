@@ -16,42 +16,30 @@ const Footers = () => {
         </Text>
         <Link href="">
           <a className="social_link twitter">
+            <img src="images/twitter.svg" height={50} alt="Logo de Twitter" />
+          </a>
+        </Link>
+        <Link href="">
+          <a className="social_link facebook">
+            <img src="images/facebook.svg" height={50} alt="Logo de Facebook" />
+          </a>
+        </Link>
+        <Link href="">
+          <a className="social_link tiktok">
+            <img src="images/github.svg" height={50} alt="Logo de Tiktok" />
+          </a>
+        </Link>
+        <Link href="">
+          <a href="/" className="social_link instagram">
             <img
-              src="images/twitter.svg"
+              src="images/instagram.svg"
               height={50}
-              alt="Logo de Twitter"
-              />
-            </a>
-          </Link>
-          <Link href="">
-            <a className="social_link facebook">
-              <img
-                src="images/facebook.svg"
-                height={50}
-                alt="Logo de Facebook"
-              />
-            </a>
-          </Link>
-          <Link href="">
-            <a className="social_link tiktok">
-              <img
-                src="images/github.svg"
-                height={50}
-                alt="Logo de Tiktok"
-              />
-            </a>
-          </Link>
-          <Link href="">
-            <a href="/" className="social_link instagram">
-              <img
-                src="images/instagram.svg"
-                height={50}
-                alt="Logo de instagram"
-              />
-            </a>
-          </Link>
-        </Social>
-      </Footer>
+              alt="Logo de instagram"
+            />
+          </a>
+        </Link>
+      </Social>
+    </Footer>
   );
 };
 
