@@ -4,19 +4,23 @@ import { List, Title } from './styles'
 const ListSimpleStore = () => {
   const stores = [
     {
-      img: '/images/amazon.png',
-      url: 'https://www.amazon.com.mx/',
+      img: '/images/MercadoLibreCarroussel.png',
+      url: 'https://www.mercadolibre.com.co/',
     },
     {
-      img: 'https://www.sams.com.mx/20.10.1/static/logo-fixed-2.png',
+      img: '/images/AliExpressCarroussel.png',
+      url: 'https://es.aliexpress.com/',
+    },
+    {
+      img: '/images/SamsCarroussel.png',
       url: 'https://www.sams.com.mx/',
     },
     {
-      img: 'https://www.walmart.com.mx/static/media/logo-white.b89985b7.svg',
+      img: '/images/WalmartCarroussel.png',
       url: 'https://www.walmart.com.mx/',
     },
     {
-      img: '/images/amazon.png',
+      img: '/images/amazonCarroussel.png',
       url: 'https://www.amazon.com.mx/',
     },
   ]
