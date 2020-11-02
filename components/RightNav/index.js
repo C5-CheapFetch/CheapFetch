@@ -21,7 +21,7 @@ const RightNav = () => {
           <Anchor> Stores </Anchor>
         </Link>
       </Li>
-      {user && !loading
+      {/* {user && !loading
         ? [
             <Li key="/api/logout">
               <Link href="/api/logout">
@@ -34,7 +34,14 @@ const RightNav = () => {
               </Link>
             </Li>,
           ]
-        : null}
+        : null} */}
+      {user && !loading ? (
+        <Li key="/api/login">
+          <Link href="/api/logout">
+            <Anchor> Log Out </Anchor>
+          </Link>
+        </Li>
+      ) : null}
       {!user && !loading ? (
         <Li key="/api/login">
           <Link href="/api/login">
