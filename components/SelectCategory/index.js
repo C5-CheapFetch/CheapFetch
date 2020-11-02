@@ -1,22 +1,28 @@
-import React from 'react'
-import { ServerStyleSheet } from 'styled-components'
+import React, { useState } from 'react'
 
 import { Select, Option } from './styles'
+import { useRouter } from 'next/router'
 
-const SelectCategory = ({ categories }) => {
+const SelectCategory = ({ text, category }) => {
+  let categories = ['all', 'cars', 'camera', 'phone','cookware','motocycles','tv']
+  const router = useRouter()
 
-  categories = ['cellphones', 'tvs', 'cars', 'cameras']
+  const redirect = (cat) => {
+    router.push(`/search/${text}/${cat}`)
+  }
 
-  return(
-    <React.Fragment>
-      <Select>
-        {
-          categories.map( (cat) => (
-            <Option value={cat}>{cat}</Option>
-          ))
-        }
+  const handleChange = (event) => {
+    redirect(event.target.value)
+  }
+
+  return (
+    <>
+      <Select onChange={handleChange}>
+        {categories.map((cat) => (
+          <Option value={cat}>{cat}</Option>
+        ))}
       </Select>
-    </React.Fragment>
+    </>
   )
 }
 
