@@ -1,4 +1,5 @@
 import CardInfo from '../CardInfo'
+import SelectCategory from '../SelectCategory'
 import { List, Title, TitlePink, Container } from './styles'
 import { useContext } from 'react'
 import { Context } from '../Layout/index.js'
@@ -37,6 +38,7 @@ const ListCardInfo = ({ search }) => {
       )}
       <Title>
         Category: <TitlePink>{category}</TitlePink>
+        <SelectCategory />
       </Title>
 
       <Container>
