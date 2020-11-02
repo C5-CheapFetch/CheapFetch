@@ -21,6 +21,7 @@
   "homepage": "https://github.com/C5-CheapFetch/CheapFetch#readme",
   "dependencies": {
     "next": "^9.5.5",
+    "next-images": "^1.6.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
@@ -28,6 +29,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "babel-plugin-styled-components": "^1.11.1"
   }
 }
