@@ -9,9 +9,19 @@ const ListCardInfo = ({ search }) => {
   const text = search[0]
   const category = search[1]
 
+  const compare = (a, b) => {
+    if (a.price < b.price) {
+      return -1
+    }
+    if (a.price > b.price) {
+      return 1
+    }
+    return 0
+  }
+
   const getSearch = () => {
     //Funcion para filtrar los resultados
-    return products.filter((r) => {
+    let filtered = products.filter((r) => {
       if (text === 'all') {
         return r.category.includes(category)
       } else if (category === 'all') {
@@ -23,6 +33,7 @@ const ListCardInfo = ({ search }) => {
         )
       }
     })
+    return filtered.sort(compare)
   }
 
   return (

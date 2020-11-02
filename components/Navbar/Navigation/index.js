@@ -1,12 +1,15 @@
 import RightNav from '../RightNav'
 import CenterNav from '../CenterNav'
-import { Nav, Menu, Logo } from './styles'
+import { Nav, Menu, LogoContainer } from './styles'
+import Logo from '../../../public/images/logo.svg'
 
 const Navigation = () => {
   return (
     <Nav>
-      <Menu src='images/menu.png' height={50} alt='menu' />
-      <Logo></Logo>
+      <Menu />
+      <LogoContainer>
+        <Logo width="100%"></Logo>
+      </LogoContainer>
       <CenterNav />
       <RightNav />
     </Nav>
