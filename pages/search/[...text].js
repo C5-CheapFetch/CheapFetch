@@ -4,7 +4,7 @@ import SearchBar from "../../components/SearchBar";
 import ListCardInfo from "../../components/ListCardInfo";
 import { useRouter } from "next/router";
 
-const Searchx = () => {
+const Search = () => {
   const router = useRouter();
   return (
     <Layout>
@@ -14,4 +14,4 @@ const Searchx = () => {
   );
 };
 
-export default Searchx;
+export default Search;

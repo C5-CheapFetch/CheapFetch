@@ -1,10 +1,9 @@
 <center>
 
-<!-- ![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo") -->
+![CheapFetch Logo](https://i.imgur.com/ag41NRk.png "CheapFetch")
 
-<!-- ![](https://img.shields.io/github/stars/Food-Market/letscook) ![](https://img.shields.io/github/forks/Food-Market/letscook)
-![GitHub](https://img.shields.io/github/license/Food-Market/LetsCook?color=%232a9d8f)
-![](https://img.shields.io/github/release/Food-Market/letscook) ![](https://img.shields.io/github/issues/Food-Market/letscook) -->
+![](https://img.shields.io/github/issues/C5-CheapFetch/CheapFetch) ![](https://img.shields.io/github/license/C5-CheapFetch/CheapFetch)
+ 
 
 # 🧐💹 CheapFetch 😍〽
 
@@ -16,11 +15,11 @@ Our lema is "Search once, find everywhere" and we take it so seriously
 
 **SITE:**
 
-###
+### http://todefined.be
 
 <center>
 
-<!-- ![Previe-imagen](https://i.imgur.com/gtQVQGM.png) -->
+![Previe-imagen](https://i.imgur.com/opJzEVS.png)
 
 </center>
 
@@ -28,15 +27,14 @@ Our lema is "Search once, find everywhere" and we take it so seriously
 
 ## 🎯 Objectives
 
-- Attract new customers using social networks and website.
-- Publicize your menu and promotions on the virtual channel.
-- Offer services such as addresses and online payments.
+-   Help customers to find the product they want at the most affordable price.
+-   Save customer time, allowing multi-store results with a single search.
 
 ---
 
 ## 👨‍👩‍👧‍👦 Target Audiences
 
-Our application offers as an alternative home delivery to people passionate about gastronomy but who want to avoid the manual search for ingredients. People with passion and creativity for cooking, who want to learn and focus fully on culinary preparation. Cooking is an ancient art and is very popular among people from young to old and older, between 18 and 60 years old, we seek that our application breaks the gap and allows full accessibility to anyone who enjoys cooking.
+Anyone who wants to save time doing a multi-store search for the product they are interested in, being sure that they will always find the one with the lowest price highlighted.
 
 ---
 
@@ -48,7 +46,7 @@ If you want to run the site locally, you can:
 2. Go to project's folder
 
 ```bash
-cd letscook
+cd CheapFetch
 ```
 
 3. Install the dependencies
@@ -60,62 +58,50 @@ npm install
 4. Run development enviroment.
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ---
 
-## Api - Description
+## Api - Descripcion
 
-- Endpont Recipes: "http://161.35.124.63:3000/api/maestro"
-- Endpont BreakFast: "http://161.35.124.63:3000/api/maestro/type/breakfast"
-- Endpont Lunch: "http://161.35.124.63:3000/api/maestro/type/lunch"
-- Endpont Dinners: "http://161.35.124.63:3000/api/maestro/type/dinner"
-
+-   Endpont Items List: "https://apidepruebas.azurewebsites.net/api/items-list/"
 ---
 
 ## 🛠 Deployment
 
-- GitHub main repository:
+-   GitHub main repository:
 
-  #### [https://github.com/Food-Market/LetsCook/](https://github.com/Food-Market/LetsCook/)
+    #### [https://github.com/C5-CheapFetch/CheapFetch](https://github.com/C5-CheapFetch/CheapFetch)
 
-- Heroku
+-   Vercel
+-   #### [https://github.com/C5-CheapFetch/CheapFetch](https://github.com/C5-CheapFetch/CheapFetch)
 
 ---
 
 ## 🧾 License
 
-- The MIT License (MIT)
+-   The MIT License (MIT)
 
 ---
 
 ## ➕ Contributing
 
-If you want to contribute with this project, just make a Pull Request explaining the improving ✨.
+If you want to contribute with this project, just make a PR explaining the improving and we will check it out
 
 ---
 
 ## 💻 Technologies:
 
-- HTML5
-- CSS3 - SASS
-- JavaScript
-  React
-- Router - SPA
-
----
-
-## 🚧 Test
-
-### _Pruebas description_
-
-Still no implementation. Project under development
+-   React.js ⚛️
+-   Next.js  ▲
+-   Styled components 💅
+-   Auth0 🔒
 
 ---
 
 ## 🤝 Gratefulness
 
-A joint effort of the Platzi Master colleagues, carrying out their first group project. Thanks to the constant support of Cohort 4 mentors.
+To all those involved in the development of this project, to the mentors of Cohort 5 and Cohort 4 and to the colleagues who gave us their invaluable time and knowledge when necessary 💚
 
 ---

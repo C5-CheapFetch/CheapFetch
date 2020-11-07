@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.article`
   background-color: #1c1c1c;
-  height: 150px;
+  height: 250px;
   color: lavender;
   display: flex;
   align-items: center;
