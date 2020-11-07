@@ -4,6 +4,7 @@ import { Select, Option } from './styles'
 import { useRouter } from 'next/router'
 
 const SelectCategory = ({ text, category }) => {
+
   let categories = ['all', 'cars', 'camera', 'phone','cookware','motocycles','tv']
   const router = useRouter()
 
@@ -19,7 +20,7 @@ const SelectCategory = ({ text, category }) => {
     <>
       <Select onChange={handleChange}>
         {categories.map((cat) => (
-          <Option value={cat}>{cat}</Option>
+          <Option key={cat.id} value={cat}>{cat}</Option>
         ))}
       </Select>
     </>

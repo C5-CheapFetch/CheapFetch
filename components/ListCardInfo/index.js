@@ -6,8 +6,8 @@ import { Context } from '../Layout/index.js'
 
 const ListCardInfo = ({ search }) => {
   const { products } = useContext(Context)
-  const text = search[0]
-  const category = search[1]
+  const text = search?search[0]:''
+  const category = search?search[1]:''
 
   const compare = (a, b) => {
     if (a.price < b.price) {
