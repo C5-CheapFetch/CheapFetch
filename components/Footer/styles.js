@@ -9,6 +9,7 @@ export const Footer = styled.article`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
+  margin-top: 100px;
 
 
   @media (max-width: 767px){
@@ -19,7 +20,7 @@ export const Footer = styled.article`
 `;
 
 export const PlatziCheap = styled.div`
-   background-color: #1C1C1C;
+    background-color: #1C1C1C;
     color: lavender;
     display: flex;
     align-items: center;
