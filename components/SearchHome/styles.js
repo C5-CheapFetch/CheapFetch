@@ -19,12 +19,12 @@ export const Video = styled.div`
   }
   @media (max-width: 1024px) {
     top: -15vh;
-    width: 115%;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
     top: -20vh;
-    width: 115%;
+    width: 100%;
   }
 `
 

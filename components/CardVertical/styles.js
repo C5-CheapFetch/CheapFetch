@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Card = styled.div`
   width: 194px;
   height: 408px;
-  background-color: #FAC5C5;
-  overflow:hidden;
-  border: 3px solid #1C1C1C;
+  background-color: #fac5c5;
+  overflow: hidden;
+  border: 3px solid #1c1c1c;
 
   /* hacer el border-radius angular */
   clip-path: polygon(
@@ -19,8 +19,12 @@ export const Card = styled.div`
     0% calc(100% - 5px)
   );
 
-  &:hover{
+  &:hover {
     transform: scale(1.01);
+  }
+  @media (max-width: 425px) {
+    height: 318px;
+    width: 154px;
   }
 `
 
