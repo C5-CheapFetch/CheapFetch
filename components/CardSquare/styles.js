@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Card = styled.div`
   width: 194px;
   height: 194px;
-  background-color: #FAC5C5;
-  overflow:hidden;
-  border: 3px solid #1C1C1C;
+  background-color: #fac5c5;
+  overflow: hidden;
+  border: 3px solid #1c1c1c;
   box-shadow: 5px 5px 5px 5px black;
 
   /* hacer el border-radius angular */
@@ -20,8 +20,13 @@ export const Card = styled.div`
     0% calc(100% - 5px)
   );
 
-  &:hover{
+  &:hover {
     transform: scale(1.01);
+  }
+
+  @media (max-width: 425px) {
+    width: 154px;
+    height: 154px;
   }
 `
 
