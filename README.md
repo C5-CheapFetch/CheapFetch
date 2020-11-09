@@ -75,7 +75,8 @@ npm run dev
     #### [https://github.com/C5-CheapFetch/CheapFetch](https://github.com/C5-CheapFetch/CheapFetch)
 
 -   Vercel
--   #### [https://github.com/C5-CheapFetch/CheapFetch](https://github.com/C5-CheapFetch/CheapFetch)
+
+    #### [https://cheap-fetch.vercel.app/](https://cheap-fetch.vercel.app/)
 
 ---
 
