@@ -37,15 +37,26 @@ export const Card = styled.div`
 `
 
 export const Img = styled.img`
+<<<<<<< HEAD
   width: 100px;
   height: 100px;
   object-fit: cover;
   justify-content: space-between;
   margin-top: -10px;
+=======
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+  justify-content: space-between;
+  margin-top: 20px;
+>>>>>>> f221c3d69dd938accdaeb4f1c420a8b00aa0d631
 `
 
 export const Name = styled.a`
   font-size: 30px;
   margin-top: 20px;
+<<<<<<< HEAD
   margin-left: 60px;
+=======
+>>>>>>> f221c3d69dd938accdaeb4f1c420a8b00aa0d631
 `

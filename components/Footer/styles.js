@@ -9,7 +9,10 @@ export const Footer = styled.article`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
+<<<<<<< HEAD
   margin-top: 100px;
+=======
+>>>>>>> f221c3d69dd938accdaeb4f1c420a8b00aa0d631
 
 
   @media (max-width: 767px){
