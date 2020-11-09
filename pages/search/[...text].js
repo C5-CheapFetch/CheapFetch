@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const Search = () => {
   const router = useRouter();
   return (
-    <Layout>
+    <Layout title="Search">
       <SearchBar />
       <ListCardInfo search={router.query.text} />{" "}
     </Layout>

@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-
+import { useContext } from 'react'
 import { Select, Option } from './styles'
 import { useRouter } from 'next/router'
+import { DataContext } from '../../pages/_app'
 
 const SelectCategory = ({ text, category }) => {
-  let categories = ['all', 'cars', 'camera', 'phone','cookware','motocycles','tv']
+  const { categories } = useContext(DataContext)
+
   const router = useRouter()
 
   const redirect = (cat) => {
@@ -18,8 +19,13 @@ const SelectCategory = ({ text, category }) => {
   return (
     <>
       <Select onChange={handleChange}>
+        <option disabled selected>
+          Select Category
+        </option>
         {categories.map((cat) => (
-          <Option value={cat}>{cat}</Option>
+          <Option key={cat.id} value={cat}>
+            {cat}
+          </Option>
         ))}
       </Select>
     </>

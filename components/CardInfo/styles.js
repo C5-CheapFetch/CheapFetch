@@ -30,10 +30,24 @@ export const Card = styled.div`
     border-bottom: 3px solid #1c1c1c;
     white-space: normal; /*para que se vea el nombre entero al hacer hover */
   }
-  //Tablet hacia abajo
-  @media (max-width: 768px) {
+
+  @media (max-width: 1328px) {
     width: 480px;
     height: 200px;
+  }
+  @media (max-width: 1024px) {
+    grid-template-columns: 30% 70%;
+    width: 620px;
+    height: 250px;
+  }
+  @media (max-width: 666px) {
+    width: 480px;
+    height: 200px;
+    margin: 8px;
+  }
+  @media (max-width: 540px) {
+    width: 320px;
+    height: 160px;
   }
 `
 
@@ -54,7 +68,7 @@ export const Info = styled.div`
 `
 
 export const Name = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   color: #1c1c1c;
   width: 80%;
   margin-top: 15%;
@@ -63,6 +77,9 @@ export const Name = styled.p`
   white-space: nowrap; /*propiedad para '...'*/
   overflow: hidden; /*propiedad para '...'*/
   text-overflow: ellipsis; /*propiedad para '...'*/
+  @media (max-width: 666px) {
+    font-size: 16px;
+  }
 `
 
 export const Price = styled.p`

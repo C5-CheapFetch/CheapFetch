@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Footer = styled.article`
   background-color: #1c1c1c;
-  height: 250px;
+  height: 180px;
   color: lavender;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 10px;
+  margin-top: 100px;
 
 
   @media (max-width: 767px){
@@ -19,10 +20,10 @@ export const Footer = styled.article`
 `;
 
 export const PlatziCheap = styled.div`
-   background-color: #1C1C1C;
+    background-color: #1C1C1C;
     color: lavender;
     display: flex;
-    align-items: center;
+    align-items: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 5px;
@@ -30,14 +31,13 @@ export const PlatziCheap = styled.div`
 
 export const Text = styled.div`
   margin: 10px;
-  padding: 40px;
-  
+  padding: 10px;
 `;
 
 export const Social = styled.div`
     color: #f4fbff;
 
-    height: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
