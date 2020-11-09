@@ -1,22 +1,34 @@
-import React from 'react'
-import { ServerStyleSheet } from 'styled-components'
-
+import { useContext } from 'react'
 import { Select, Option } from './styles'
+import { useRouter } from 'next/router'
+import { DataContext } from '../../pages/_app'
 
-const SelectCategory = ({ categories }) => {
+const SelectCategory = ({ text, category }) => {
+  const { categories } = useContext(DataContext)
 
-  categories = ['cellphones', 'tvs', 'cars', 'cameras']
+  const router = useRouter()
 
-  return(
-    <React.Fragment>
-      <Select>
-        {
-          categories.map( (cat) => (
-            <Option value={cat}>{cat}</Option>
-          ))
-        }
+  const redirect = (cat) => {
+    router.push(`/search/${text}/${cat}`)
+  }
+
+  const handleChange = (event) => {
+    redirect(event.target.value)
+  }
+
+  return (
+    <>
+      <Select onChange={handleChange}>
+        <option disabled selected>
+          Select Category
+        </option>
+        {categories.map((cat) => (
+          <Option key={cat.id} value={cat}>
+            {cat}
+          </Option>
+        ))}
       </Select>
-    </React.Fragment>
+    </>
   )
 }
 

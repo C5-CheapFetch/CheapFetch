@@ -2,12 +2,12 @@ import CardInfo from '../CardInfo'
 import SelectCategory from '../SelectCategory'
 import { List, Title, TitlePink, Container } from './styles'
 import { useContext } from 'react'
-import { Context } from '../Layout/index.js'
+import { DataContext } from '../../pages/_app'
 
 const ListCardInfo = ({ search }) => {
-  const { products } = useContext(Context)
-  const text = search[0]
-  const category = search[1]
+  const { products } = useContext(DataContext)
+  const text = search ? search[0] : ''
+  const category = search ? search[1] : ''
 
   const compare = (a, b) => {
     if (a.price < b.price) {
@@ -43,15 +43,17 @@ const ListCardInfo = ({ search }) => {
           No results for: <TitlePink>{text}</TitlePink>
         </Title>
       ) : (
-        <Title>
-          You searched for: <TitlePink>{text}</TitlePink>
-        </Title>
-      )}
-      <Title>
-        Category: <TitlePink>{category}</TitlePink>
-        <SelectCategory />
-      </Title>
+        <>
+          <Title>
+            You searched for: <TitlePink>{text} </TitlePink>
+          </Title>
 
+          <Title>
+            Category: <TitlePink>{category}</TitlePink>
+          </Title>
+        </>
+      )}
+      <SelectCategory category={category} text={text} />
       <Container>
         {getSearch().map((r) => (
           <CardInfo

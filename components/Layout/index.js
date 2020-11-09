@@ -1,46 +1,27 @@
-import React,{ useState, createContext, useEffect } from 'react'
 import Head from 'next/head'
 import Navigation from '../Navbar/Navigation'
 import { GlobalStyles } from '../../GlobalStyles'
 import Footers from '../Footer'
-
-
-export const Context = createContext()
+import { Container } from './styles'
 
 const Layout = (props) => {
-
-  const [products, setProducts] = useState([])
-
-  useEffect(() => {
-    
-    async function getStaticProps() {
-      
-      //fetch a la api
-      const res = await fetch('https://apidepruebas.azurewebsites.net/api/items-list/')
-      const data = await res.json()
-
-      setProducts(data)
-    }
-    
-    getStaticProps()
-  }, [])
-
-
-
   return (
-    <div>
-      <Context.Provider value={{ products, setProducts }}>
-        <Head>
-          <title>CheapFetch</title>
-        </Head>
-        <GlobalStyles />
-        <Navigation />
-        <div>{props.children}</div>
-        <Footers />
-      </Context.Provider>
-    </div>
+    <>
+      <Head>
+        <title>CheapFetch - {props.title}</title>
+        <link
+          rel='shortcut icon'
+          type='image/png'
+          href='/images/favicon-16x16.png'
+        />
+        <meta name='Description' content='Search once, find everywhere'></meta>
+      </Head>
+      <GlobalStyles />
+      <Navigation />
+      <Container>{props.children}</Container>
+      <Footers />
+    </>
   )
 }
-
 
 export default Layout
