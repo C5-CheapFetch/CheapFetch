@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, products, categories }) {
 
 MyApp.getInitialProps = async ({ Component, ctx }) => {
   const res = await fetch(
-    'https://apidepruebas.azurewebsites.net/api/items-list/'
+    'https://apicheapfetch.azurewebsites.net/api/items-list/'
   )
   const products = await res.json()
 
