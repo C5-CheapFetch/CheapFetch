@@ -12,6 +12,18 @@ export const Container = styled.div`
 export const Title = styled.h3`
   font-size: 36px;
   margin: 0px 0px 50px 0px;
+  background: linear-gradient(to bottom, #fac5c5, #eeeeee);
+  padding: 5px 10px 5px 10px;
+  clip-path: polygon(
+    0 5px,
+    5px 0,
+    calc(100% - 5px) 0px,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 5px) 100%,
+    5px 100%,
+    0% calc(100% - 5px)
+  );
 `
 
 export const Grid = styled.div`

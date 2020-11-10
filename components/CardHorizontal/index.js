@@ -10,7 +10,7 @@ const CardHorizontal = ({picture_url, url_located, name, price, category, stores
         <Image src={picture_url} alt='horizontal img'/>
         <Info>
           <Name>{name}</Name>
-          <Price>${price} COP</Price>
+          <Price>${price} USD</Price>
           <Category>{category}</Category>
           <Store>{stores}</Store>
         </Info>

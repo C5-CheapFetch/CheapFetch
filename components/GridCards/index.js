@@ -12,50 +12,60 @@ const GridCards = () => {
   const { products } = useContext(DataContext)
 
   // lo de abajo es como se usa useContext, pero, como no cambiaremos el valor del estado, por eso se omitió el setProducts
-  // const {products, setProducts} = useContext(Context)
+  // const {products, setProducts} = useContext(Context
+
+  let bestDeals = []
+
+  if (products.length > 0) {
+    products.forEach((element) => {
+      if(element.category === " best deals  "){
+        bestDeals.push(element)
+      }
+    })
+  }
 
   return (
     <Container>
-      <Title>Trending Products</Title>
+      <Title>Best Deals Products</Title>
       <Grid>
         <div className='grid__vertical'>
-          <CardVertical {...products[0]} />
+          <CardVertical {...bestDeals[0]} />
         </div>
         <div className='grid__square'>
-          <CardSquare {...products[10]} />
+          <CardSquare {...bestDeals[1]} />
         </div>
         <div className='grid__horizontal'>
-          <CardHorizontal {...products[20]} />
+          <CardHorizontal {...bestDeals[2]} />
         </div>
         <div className='grid__horizontal--second'>
-          <CardHorizontal {...products[30]} />
+          <CardHorizontal {...bestDeals[3]} />
         </div>
         <div className='grid__square--second'>
-          <CardSquare {...products[40]} />
+          <CardSquare {...bestDeals[4]} />
         </div>
         <div className='grid__square--third'>
-          <CardSquare {...products[50]} />
+          <CardSquare {...bestDeals[5]} />
         </div>
         <div className='grid__squareTwo--third'>
-          <CardSquare {...products[60]} />
+          <CardSquare {...bestDeals[6]} />
         </div>
         <div className='grid__vertical--third'>
-          <CardVertical {...products[70]} />
+          <CardVertical {...bestDeals[7]} />
         </div>
         <div className='grid__squareThree--thrid'>
-          <CardSquare {...products[80]} />
+          <CardSquare {...bestDeals[8]} />
         </div>
         <div className='grid__horizontal--fourth'>
-          <CardHorizontal {...products[163]} />
+          <CardHorizontal {...bestDeals[9]} />
         </div>
         <div className='grid__vertical--fourth'>
-          <CardVertical {...products[3]} />
+          <CardVertical {...bestDeals[10]} />
         </div>
         <div className='grid__square--fifth'>
-          <CardSquare {...products[110]} />
+          <CardSquare {...bestDeals[11]} />
         </div>
         <div className='grid__horizontal--fifth'>
-          <CardHorizontal {...products[140]} />
+          <CardHorizontal {...bestDeals[1]} />
         </div>
       </Grid>
     </Container>
