@@ -25,6 +25,21 @@ export const List = styled.ul`
   @media (max-width: 767px) {
     position: relative;
     top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
+  @media (max-width: 320px) {
+   
   }
 `
 

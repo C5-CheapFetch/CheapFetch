@@ -26,6 +26,21 @@ export const Card = styled.div`
     5px 100%,
     0% calc(100% - 5px)
   );
+  @media (max-width: 767px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
 `
 export const Category = styled.div`
   font-size: 38px;
@@ -38,4 +53,5 @@ export const Line = styled.div`
   &:hover {
     background-color: black;
   }
+  
 `

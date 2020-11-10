@@ -25,11 +25,51 @@ export const Card = styled.div`
     5px 100%,
     0% calc(100% - 5px)
   );
+  @media (max-width: 767px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
 `
 
 export const Image = styled.img`
   height: 80px;
   width: auto;
+  @media (max-width: 767px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 370px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+  }
 `
 export const Separator = styled.div`
   width: 2px;
