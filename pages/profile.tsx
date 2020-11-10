@@ -1,4 +1,4 @@
-import MainLayout from "../components/layout";
+import MainLayout from "../components/Layout";
 import styled from "styled-components";
 import { useFetchUser } from "../utils/user";
 import Router from "next/router";

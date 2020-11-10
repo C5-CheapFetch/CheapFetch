@@ -1,25 +1,14 @@
 import React, { useContext } from 'react'
-import { Context } from '../Layout/index.js'
 import CardCategory from '../CardCategory'
 import { List, Title } from './styles'
+import { DataContext } from '../../pages/_app'
 
 const ListCategories = () => {
-
-  const {products} = useContext(Context)
-
-  let categories = []
-
-  products.forEach(r => {
-    if (!categories.includes(r.category)) {
-        categories.push(r.category)
-    }
-  })
-
-
+  const { categories } = useContext(DataContext)
   return (
     <List>
       <Title>Categories</Title>
-      {categories.map((c,key) => (
+      {categories.map((c, key) => (
         <CardCategory key={key} category={c}></CardCategory>
       ))}
     </List>
