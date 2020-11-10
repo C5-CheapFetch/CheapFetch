@@ -65,7 +65,7 @@ npm run dev
 
 ## Api - Descripcion
 
--   Endpont Items List: "https://apidepruebas.azurewebsites.net/api/items-list/"
+-   Endpont Items List: "https://apicheapfetch.azurewebsites.net/api/items-list/"
 ---
 
 ## 🛠 Deployment
