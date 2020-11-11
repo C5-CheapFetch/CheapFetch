@@ -79,7 +79,7 @@ const Comparison = () => {
       <CardCompare1 item={item} />
       <Title />
       <CardCompare2 item={item} />
-      <Comments />
+      {/* <Comments /> */}
       {similar.length > 0 ? <ListSugested items={similar}></ListSugested> : ''}
 
       {/* <CardCompare2 /> */}

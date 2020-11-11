@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
   max-width: 100%;
   color: #1c1c1c;
-  margin: 40px;
+  margin: 130px 0px 50px 0px;
 
   @media (max-width: 767px) {
     margin: 20px;

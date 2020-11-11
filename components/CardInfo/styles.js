@@ -31,10 +31,10 @@ export const Card = styled.div`
   &:hover .cardinfo__name {
     border-bottom: 3px solid #1c1c1c;
     white-space: normal; /*para que se vea el nombre entero al hacer hover*/
-    height: 80px;
+    height: 69px;
     overflow: auto;
     @media (max-width: 666px) {
-      height: 50px;
+      height: 40px;
     }
   }
 

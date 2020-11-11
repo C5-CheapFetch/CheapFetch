@@ -1,19 +1,25 @@
 import styled from "styled-components";
+import { colorFade } from '../../animations';
 
 export const Div = styled.div`
   display: flex;
   justify-content: center;
-`;
+  margin-bottom: 100px;
+`
+
+export const Anchor = styled.a`
+  text-decoration: none;
+  color: #1c1c1c;
+`
+
 export const Card = styled.div`
-  width: 300px;
+  width: 600px;
   height: 80px;
   background-color: #fff;
   overflow: hidden;
   border: 3px solid #1c1c1c;
-  margin-top: 150px;
-  display: flex;
-  margin-top: 40px;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   box-sizing: content-box;
 
   /* hacer el border-radius angular */
@@ -31,19 +37,40 @@ export const Card = styled.div`
   &:hover {
     transform: scale(1.01);
     background-color: #fac5c5;
+    ${colorFade({ time: '0.5s' })};
   }
-`;
+
+  @media (max-width: 767px) {
+    width: 400px;
+  }
+  @media (max-width: 530px) {
+    width: 280px;
+  }
+`
 
 export const Img = styled.img`
-  width: 100px;
-  height: 100px;
+  grid-column: 1 / 2;
+  width: 100%;
+  height: 80px;
   object-fit: cover;
   justify-content: space-between;
-  margin-top: -10px;
-`;
+`
 
 export const Name = styled.a`
-  font-size: 30px;
-  margin-top: 20px;
-  margin-left: 60px;
-`;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  grid-column: 2 / 3;
+  font-size: 24px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+  @media (max-width: 530px) {
+    font-size: 14px;
+  }
+`

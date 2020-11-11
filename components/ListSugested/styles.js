@@ -5,6 +5,7 @@ export const List = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  margin: 0px 25px 0px 25px;
 `
 export const Title = styled.h1`
   margin-top: 16px;
