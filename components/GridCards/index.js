@@ -18,7 +18,7 @@ const GridCards = () => {
 
   if (products.length > 0) {
     products.forEach((element) => {
-      if(element.category === " best deals  "){
+      if(element.category === "best deals"){
         bestDeals.push(element)
       }
     })

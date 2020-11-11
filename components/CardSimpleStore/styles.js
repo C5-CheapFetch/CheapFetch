@@ -32,20 +32,20 @@ export const Card = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width:350px;
   }
 
   @media (max-width: 480px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width:300px;
   }
   @media (max-width: 320px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 280px;
   }
 `
 

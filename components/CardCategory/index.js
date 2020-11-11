@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { Card, Category, Line } from './styles'
 
-const CardStore = ({ category}) => {
+const CardCategory = ({ category}) => {
     const router = useRouter()
 
   const redirect = () => {
@@ -11,9 +11,9 @@ const CardStore = ({ category}) => {
   return (
     <Card onClick={redirect}>
       <Category>{category}</Category>
-      <Line></Line>
+      <Line className='CardCategory__line'></Line>
     </Card>
   )
 }
 
-export default CardStore
+export default CardCategory
