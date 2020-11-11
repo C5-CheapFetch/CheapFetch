@@ -66,7 +66,7 @@ const Comparison = () => {
       similar.push(r)
     }
   })
-  console.log(similar)
+  // console.log(similar)
 
   useEffect(() => {
     //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
