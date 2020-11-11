@@ -1,20 +1,20 @@
-import React from "react";
-import Link from "next/link";
-import { Card, Img, Div, Name } from "./styles";
+import React from 'react'
+import Link from 'next/link'
+import { Card, Img, Div, Name } from './styles'
 
-const CardCompare1 = () => {
+const CardCompare1 = ({ item }) => {
   return (
     <Div>
       <Card>
-        <Link href="">
-          <a className="object">
-            <Img src="/images/nikon.jpg" alt="objeto" />
+        <Link href=''>
+          <a className='object'>
+            <Img src={item.picture} alt='objeto' />
           </a>
         </Link>
-        <Name> Nombre del Producto 36 </Name>
+        <Name>{item.name}</Name>
       </Card>
     </Div>
-  );
-};
+  )
+}
 
-export default CardCompare1;
+export default CardCompare1

@@ -23,7 +23,7 @@ const SelectCategory = ({ text, category }) => {
           Select Category
         </option>
         {categories.map((cat) => (
-          <Option key={cat.id} value={cat}>
+          <Option  value={cat}  key={cat.id}>
             {cat}
           </Option>
         ))}
