@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colorFade } from '../../animations'
 
 export const Card = styled.div`
   margin: 18px;
@@ -25,10 +26,16 @@ export const Card = styled.div`
   &:hover {
     transform: scale(1.01);
     background-color: #fac5c5;
+    ${colorFade({ time: '0.5s' })};
   }
   &:hover .cardinfo__name {
     border-bottom: 3px solid #1c1c1c;
-    white-space: normal; /*para que se vea el nombre entero al hacer hover */
+    white-space: normal; /*para que se vea el nombre entero al hacer hover*/
+    height: 80px;
+    overflow: auto;
+    @media (max-width: 666px) {
+      height: 50px;
+    }
   }
 
   @media (max-width: 1328px) {
@@ -90,6 +97,19 @@ export const Price = styled.p`
 export const Store = styled.p`
   margin-top: 200px;
   position: absolute;
+
+  @media (max-width: 1328px) {
+    margin-top: 170px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 220px;
+  }
+  @media (max-width: 666px) {
+    margin-top: 170px;
+  }
+  @media (max-width: 540px) {
+    margin-top: 130px;
+  }
 `
 
 export const Url = styled.a`

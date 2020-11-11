@@ -7,7 +7,7 @@ const CardInfo = ({picture, name, price, stores, url_located}) => {
     <Card>
       <Image src={picture} />
       <Info>
-        <Name className='cardinfo__name'>{name}</Name>
+          <Name className='cardinfo__name'>{name}</Name>
         <Price>${price} USD</Price>
         <Store>{stores}</Store>
       </Info>

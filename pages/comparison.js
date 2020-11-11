@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import SearchBar from "../components/SearchBar";
@@ -8,6 +8,11 @@ import Comments from "../components/Comments";
 import Title from "../components/Title";
 
 const Comparison = () => {
+
+  useEffect(() => { //esta linea sirve para que cuando se renderice la pagina envíe al usuario hasta arriba de la pagina
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
 
     <Layout>

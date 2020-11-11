@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const List = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  min-height: 100vh;
 `
 export const Title = styled.h1`
   margin-top: 16px;
@@ -24,4 +25,10 @@ export const Container = styled.div`
   @media (max-width: 1024px) {
     grid-template-columns: 1fr ;
   }
+`
+
+export const NotFound = styled.div`
+  color: #1c1c1c;
+  font-size: 24px;
+  margin: 20px 0px;
 `

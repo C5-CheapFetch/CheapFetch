@@ -1,6 +1,6 @@
 import CardInfo from '../CardInfo'
 import SelectCategory from '../SelectCategory'
-import { List, Title, TitlePink, Container } from './styles'
+import { List, Title, TitlePink, Container, NotFound } from './styles'
 import { useContext } from 'react'
 import { DataContext } from '../../pages/_app'
 
@@ -39,9 +39,12 @@ const ListCardInfo = ({ search }) => {
   return (
     <List>
       {getSearch().length === 0 ? (
-        <Title>
-          No results for: <TitlePink>{text}</TitlePink>
-        </Title>
+        <>
+          <Title>
+            No results for: <TitlePink>{text}</TitlePink>
+          </Title>
+          <NotFound>Sorry, we can't found what you were looking for 😕</NotFound>
+        </>
       ) : (
         <>
           <Title>

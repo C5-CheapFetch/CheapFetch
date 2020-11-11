@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colorFade } from '../../animations'
 
 export const Card = styled.div`
   display: flex;
@@ -14,6 +15,7 @@ export const Card = styled.div`
   &:hover {
     background-color: #fac5c5;
     transform: scale(1.01);
+    ${colorFade({ time: '0.5s' })};
   }
   /* hacer el border-radius angular */
   clip-path: polygon(

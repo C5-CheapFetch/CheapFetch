@@ -8,21 +8,21 @@ const ListSimpleStore = () => {
       img: '/images/MercadoLibreCarroussel.png',
       url: 'https://www.mercadolibre.com.co/',
     },
-    {
-      id: 2,
-      img: '/images/AliExpressCarroussel.png',
-      url: 'https://es.aliexpress.com/',
-    },
-    {
-      id: 3,
-      img: '/images/SamsCarroussel.png',
-      url: 'https://www.sams.com.mx/',
-    },
-    {
-      id: 4,
-      img: '/images/WalmartCarroussel.png',
-      url: 'https://www.walmart.com.mx/',
-    },
+    // {
+    //   id: 2,
+    //   img: '/images/AliExpressCarroussel.png',
+    //   url: 'https://es.aliexpress.com/',
+    // },
+    // {
+    //   id: 3,
+    //   img: '/images/SamsCarroussel.png',
+    //   url: 'https://www.sams.com.mx/',
+    // },
+    // {
+    //   id: 4,
+    //   img: '/images/WalmartCarroussel.png',
+    //   url: 'https://www.walmart.com.mx/',
+    // },
     {
       id: 5,
       img: '/images/AmazonCarroussel.png',
