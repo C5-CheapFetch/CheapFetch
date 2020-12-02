@@ -9,7 +9,7 @@
 
   </center>
 
-Cheap Fetch it's a very useful website that allows you to search a product along a the most popular web stores.
+Cheap Fetch it's a very useful website that allows you to search a product along Amazon and Mercado Libre (more stores are comming soon)
 
 Our lema is "Search once, find everywhere" and we take it so seriously
 
